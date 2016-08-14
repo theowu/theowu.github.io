@@ -2,8 +2,8 @@
 title: Theo's Blog
 SEOTitle: 吴思元的博客 | Theo's Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: "关于前端与设计、黑客与画家 | 吴思元，Web & Mobile Lover，iOS and Front-End Engineer，UX Designer | 这里是 @Theo吴思元 的个人博客，与你一起发现更大的世界。"
+email: kermitiradennis@hotmail.com
+description: "关于苹果开发与前端、黑客与怪盗 | 吴思元，Web & Mobile Lover，iOS and Front-End Engineer，UX Designer | 这里是 @Theo吴思元 的个人博客，与你一起发现更大的世界。"
 keyword: "吴思元, Theo吴思元, Theo, 鬼栈, theowu, @theowu, 吴思元的博客, Theo's Blog, 博客, 个人网站, 互联网, 前端, 设计, 产品, iOS, Lynn, swift, Apple"
 url: "http://theowu.tk"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
@@ -12,11 +12,11 @@ baseurl: ""                             # for example, '/blog' if your blog host
 
 # SNS settings
 RSS: false
-weibo_username:     kermitiradennis@hotmail.com
-zhihu_username:     吴擎theo
+weibo_username:     1919490675
+zhihu_username:     theowu
 github_username:    theowu
 #twitter_username:  huxpro
-facebook_username:  Théo Wu
+facebook_username:  theo.wu.3
 # linkedin_username:  firstname-lastname-idxxxx
 
 
