@@ -182,7 +182,7 @@ body, html {
 	background-size: 22px;
 }
 
-/******* Hux Branch *****/
+/******* Theo Branch *****/
 html{
 	font-size: 90%;
 }
@@ -190,7 +190,8 @@ body{
 	background: #fafafa;
 }
 header{
-	background: #6ca8fb;
+	/*background: #6ca8fb;*/
+	background-color: #3699b0;
 	text-align: center;
 	height: 620px;
 	min-width: 100%;
