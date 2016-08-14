@@ -15,7 +15,7 @@ RSS: false
 weibo_username:     1919490675
 zhihu_username:     theowu
 github_username:    theowu
-#twitter_username:  huxpro
+#twitter_username:  kermitiradennis
 facebook_username:  theo.wu.3
 # linkedin_username:  firstname-lastname-idxxxx
 
@@ -70,7 +70,7 @@ ga_domain: theowu.tk
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，最好少装B。"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar-theo.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -83,6 +83,9 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
+        title: "Huxpro",
+        href: "http://huxpro.me/"
+    },{
         title: "Su",
         href: "http://su.gallery/"
     },{
