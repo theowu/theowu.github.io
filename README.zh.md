@@ -4,6 +4,7 @@
 
 
 ### 关于收到"Page Build Warning"的email
+对于不知道jekyll为何物的童鞋，请移步[jekyll](https://jekyllrb.com)官网自行科普。
 
 由于jekyll升级到3.0.x,对原来的pygments代码高亮不再支持，现只支持一种-rouge，所以你需要在 `_config.yml`文件中修改`highlighter: rouge`.另外还需要在`_config.yml`文件中加上`gems: [jekyll-paginate]`.
 
@@ -19,32 +20,20 @@
 参考文档：[using jekyll with pages](https://help.github.com/articles/using-jekyll-with-pages/) & [Upgrading from 2.x to 3.x](http://jekyllrb.com/docs/upgrading/2-to-3/)
 
 
-## 关于模板(beta)
+## 关于模板
 
-我的博客仓库——`huxpro.github.io`，是经常修改的，而且还会有人乱提交代码，因此给大家做了一个稳定版的模板。大家可以直接fork模板——`huxblog-boilerplate`,要改的地方我都说明了。或者可以直接下载zip到本地自己去修改。
+我的博客仓库——`theowu.github.io`，可能会被修改，大家可以直接fork也可以clone然后自己去修改出自己的版本。我的博客模板是clone的huxpro的V1.5.2稳定版本然后自己修改的，huxpro在该版本里做出了如下更新：
 
-```
-$ git clone git@github.com:Huxpro/huxblog-boilerplate.git
-```
-
-**[在这里预览模板 &rarr;](http://huangxuan.me/huxblog-boilerplate/)**
-
-## 各版本特性
-
-##### New Feature (V1.5.2)
-
-* 当你fork了我的仓库之后，还要删掉里面的关于我的文档是不是感到略烦躁呢？**Boilerplate** 模板将帮助你快速开始，方便合并与更新。
 * `-apple-system`被添加到了字体规则里面了，这套字体格式能将iOS9默认的新字体**San Francisco**表现的非常漂亮。
 * 解决了代码过长自动换行的bug,替换为横向滚动条。详情请见[issue#15](https://github.com/Huxpro/huxpro.github.io/issues/15)
 
-###### 其他历史版本个人觉得没有必要了解，看看英文就行了。
-
+###### 其他历史版本个人觉得没有必要了解，感兴趣的可以去huxpro的github ropo转转: [Huxpro](https://github.com/Huxpro/huxpro.github.io)
 
 
 ## 支持
 
-* 你可以自由的fork。如果你能主题作者和 github 的地址保留在你的页面底部，我将非常感谢你。
-* 如果你喜欢我的这个博客模板，请在`huxpro.github.io`这个repository点个赞——右上角**star**一下。
+* 你可以自由的fork或者clone。如果你能将主题作者和 github 的地址保留在你的页面底部，我将非常感谢你。
+* 如果你喜欢这个博客模板，请在`theowu.github.io`这个repository右上方点个赞——就是点击**star**一下。
 
 ## 说明文档
 
@@ -60,7 +49,7 @@ $ git clone git@github.com:Huxpro/huxblog-boilerplate.git
 	* [HTML5 演示文档布局](#keynote-layout)
 * 评论与 Google/Baidu Analytics
 	* [评论](#comment)
-	* [网站分析](#analytics) 
+	* [网站分析](#analytics)
 * 高级部分
 	* [自定义](#customization)
 	* [标题底图](#header-image)
@@ -79,17 +68,24 @@ $ git clone git@github.com:Huxpro/huxblog-boilerplate.git
 
 ```
 # Site settings
-title: Hux Blog             # 你的博客网站标题
-SEOTitle: Hux Blog			# 在后面会详细谈到
-description: "Cool Blog"    # 随便说点，描述一下
+title: Theo's Blog          # 你的博客网站标题
+SEOTitle: Theo's Blog				# 在后面会详细谈到
+description: "Cool Blog"    # 随便说点，描述一下你的博客
 
 # SNS settings      
-github_username: huxpro     # 你的github账号
-weibo_username: huxpro      # 你的微博账号，底部链接会自动更新的。
+github_username: theowu     # 你的github账号
+weibo_username: 1919490675  # 你的微博账号，底部链接会自动更新的。
 
 # Build settings
-# paginate: 10              # 一页你准备放几篇文章
+# paginate: 10              # 一页你准备放几篇文章,这里设置的10页
 ```
+在这里不得不啰嗦一下，大神们写的说明对小白都不是很友好。其实我敢打赌不止我一个人连自己微博知乎脸书账号在哪都找不到，既然我自己折腾后找到了，就拿微博举个栗子说明下到底用什么黑魔法去找自己的SNS账号。
+
+首先登录自己的微博，很多人把微博昵称和账号/用户名搞混，其实是两个不同的东西，登录完后点击微博导航栏上的一个人形图标:
+![](http://theowu.tk/img/weibo-count-01.jpg)
+然后等待页面跳转，跳转完成后把鼠标指针移到浏览器的地址栏点击一下，可以看见地址栏里面的那串数字或者字母就是你的微博用户名:
+![](http://theowu.tk/img/weibo-count-02.jpg)
+其他网站如知乎，脸书等等如果找不到自己的用户名都可以用类似的方法,好了骚年，尽情地继续折腾吧。
 
 Jekyll官方网站还有很多的参数可以调，比如设置文章的链接形式...网址在这里：[Jekyll - Official Site](http://jekyllrb.com/) 中文版的在这里：[Jekyll中文](http://jekyllcn.com/).
 
@@ -105,8 +101,8 @@ layout:     post
 title:      "Hello 2015"
 subtitle:   "Hello World, Hello Blog"
 date:       2015-01-29 12:00:00
-author:     "Hux"
-header-img: "img/post-bg-2015.jpg"
+author:     "Theo"
+header-img: "img/post-bg-2016.jpg"
 tags:
     - Life
 ---
@@ -123,7 +119,7 @@ tags:
 # Sidebar settings
 sidebar: true  #添加侧边栏
 sidebar-about-description: "简单的描述一下你自己"
-sidebar-avatar: /img/avatar-hux.jpg     #你的大头贴，请使用绝对地址.
+sidebar-avatar: /img/avatar-theo.jpg     #你的大头贴，使用绝对地址.
 ```
 
 侧边栏是响应式布局的，当屏幕尺寸小于992px的时候，侧边栏就会移动到底部。具体请见bootstrap栅格系统 <http://v3.bootcss.com/css/>
@@ -145,7 +141,7 @@ featured-condition-size: 1     # A tag will be featured if the size of it is mor
 ```
 
 唯一需要注意的是`featured-condition-size`: 如果一个标签的 SIZE，也就是使用该标签的文章数大于上面设定的条件值，这个标签就会在首页上被推荐。
- 
+
 内部有一个条件模板 `{% if tag[1].size > {{site.featured-condition-size}} %}` 是用来做筛选过滤的.
 
 
@@ -153,12 +149,16 @@ featured-condition-size: 1     # A tag will be featured if the size of it is mor
 
 好友链接部分。这会在全部页面显示。
 
-设置是在 `_config.yml`文件里面的`Friends`那块，自己加吧。
+设置是在 `_config.yml`文件里面的`Friends`那块，自己加吧，也可以把我加到你的好友列表里。
 
 ```
 # Friends
 friends: [
-    {
+		{
+				title: "Theo's Blog",
+				href: "http://theowu.github.io/"
+		},
+		{
         title: "Foo Blog",
         href: "http://foo.github.io/"
     },
@@ -176,7 +176,7 @@ HTML5幻灯片的排版：
 
 ![](http://huangxuan.me/img/blog-keynote.jpg)
 
-这部分是用于占用html格式的幻灯片的，一般用到的是 Reveal.js, Impress.js, Slides, Prezi 等等.我认为一个现代化的博客怎么能少了放html幻灯的功能呢~
+这部分是用于占用html格式的幻灯片的，一般用到的是 Reveal.js, Impress.js, Slides, Prezi 等等。一个现代化的博客怎么能少了放html幻灯的功能呢~
 
 其主要原理是添加一个 `iframe`，在里面加入外部链接。你可以直接写到头文件里面去，详情请见下面的yaml头文件的写法。
 
@@ -221,7 +221,7 @@ ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # 你用Google账号去注册一个就会给你一个这样的id
-ga_domain: huangxuan.me			# 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto。
+ga_domain: theowu.tk			# 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto。
 ```
 
 #### Customization
@@ -235,7 +235,7 @@ JavaScript 的压缩混淆、Less 的编译、Apache 2.0 许可通告的添加�
 #### Header Image
 
 标题底图是可以自己选的，看看几篇示例post你就知道如何设置了。怎么样才能让标题底图好看呢？
-  
+
 标题底图的选取完全是看个人的审美了，我也帮不了你。每一篇文章可以有不同的底图，你想放什么就放什么，最后宽度要够，大小不要太大，否则加载慢啊。
 
 但是需要注意的是本模板的标题是**白色**的，所以背景色要设置为**灰色**或者**黑色**，总之深色系就对了。当然你还可以自定义修改字体颜色，总之，用github pages就是可以完全的个性定制自己的博客。
@@ -248,10 +248,7 @@ JavaScript 的压缩混淆、Less 的编译、Apache 2.0 许可通告的添加�
 
 ## 致谢
 
-1. 这个模板是从这里[IronSummitMedia/startbootstrap-clean-blog-jekyll](https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll)  fork 的。 感谢这个作者
-2. 感谢[@BrucZhaoR](https://github.com/BruceZhaoR)的中文翻译 
-
-3. 感谢 Jekyll、Github Pages 和 Bootstrap!
-
-
-
+1. 这个模板是从这里[Huxpro](https://github.com/Huxpro/huxpro.github.io) clone 的。感谢这个作者。
+2. Huxpro 的模板是基于著名的clean blog 修改的，详见这里[IronSummitMedia/startbootstrap-clean-blog-jekyll](https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll)  fork 的。 感谢这个作者。
+3. 本篇中文readme是基于[@BrucZhaoR](https://github.com/BruceZhaoR)的中文翻译修改而来，感谢他。
+4. 感谢 Jekyll、Github Pages 和 Bootstrap!
