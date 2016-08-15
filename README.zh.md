@@ -85,7 +85,7 @@ weibo_username: 1919490675  # 你的微博账号，底部链接会自动更新�
 ![](http://theowu.tk/img/weibo-count-01.jpg)
 然后等待页面跳转，跳转完成后把鼠标指针移到浏览器的地址栏点击一下，可以看见地址栏里面的那串数字或者字母就是你的微博用户名:
 ![](http://theowu.tk/img/weibo-count-02.jpg)
-其他网站如知乎，脸书等等如果找不到自己的用户名都可以用类似的方法,好了骚年，尽情地继续折腾吧。
+其他网站如知乎，脸书等等如果找不到自己的用户名都可以用类似的方法，好了骚年，尽情地继续折腾吧。
 
 Jekyll官方网站还有很多的参数可以调，比如设置文章的链接形式...网址在这里：[Jekyll - Official Site](http://jekyllrb.com/) 中文版的在这里：[Jekyll中文](http://jekyllcn.com/).
 
