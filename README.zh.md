@@ -69,7 +69,7 @@
 ```
 # Site settings
 title: Theo's Blog          # 你的博客网站标题
-SEOTitle: Theo's Blog				# 在后面会详细谈到
+SEOTitle: Theo's Blog       # 在后面会详细谈到
 description: "Cool Blog"    # 随便说点，描述一下你的博客
 
 # SNS settings      
@@ -154,11 +154,11 @@ featured-condition-size: 1     # A tag will be featured if the size of it is mor
 ```
 # Friends
 friends: [
-		{
-				title: "Theo's Blog",
-				href: "http://theowu.github.io/"
-		},
-		{
+    {
+        title: "Theo's Blog",
+        href: "http://theowu.github.io/"
+    },
+    {
         title: "Foo Blog",
         href: "http://foo.github.io/"
     },
@@ -248,7 +248,7 @@ JavaScript 的压缩混淆、Less 的编译、Apache 2.0 许可通告的添加�
 
 ## 致谢
 
-1. 这个模板是从这里[Huxpro](https://github.com/Huxpro/huxpro.github.io) clone 的。感谢这个作者。
-2. Huxpro 的模板是基于著名的clean blog 修改的，详见这里[IronSummitMedia/startbootstrap-clean-blog-jekyll](https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll)  fork 的。 感谢这个作者。
+1. 这个模板是从[Huxpro](https://github.com/Huxpro/huxpro.github.io) 这里clone 的。感谢这个作者。
+2. Huxpro 的模板是基于著名的clean blog 修改的，详见这里[IronSummitMedia/startbootstrap-clean-blog-jekyll](https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll) 感谢这个作者。
 3. 本篇中文readme是基于[@BrucZhaoR](https://github.com/BruceZhaoR)的中文翻译修改而来，感谢他。
 4. 感谢 Jekyll、Github Pages 和 Bootstrap!
