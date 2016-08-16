@@ -28,7 +28,7 @@ tags:
 
 从2015 年 6月毕业后，一直零零碎碎的学习苹果的 Swift 语言，深深的喜欢 Swift 简洁优雅安全的特性。前天一次偶然的机会，刚刚学完了GitHub基础在逛 [CocoaChina的Swift板块](http://www.cocoachina.com/swift) 时偶然发现一个技术博客，觉得搞得很漂亮，于是追根溯源，发现是托管在GitHub上的。我马上来了兴趣，google了一番发现了一个惊天超级轻松时尚的快速建 Blog 的技术方案：[GitHub Pages](https://pages.github.com/) + [Jekyll](http://jekyllrb.com/)
 
-刚开始不太会用GitHub，把别人的项目 folk 了生怕会误点 pull request 给对方造成困扰，于是把项目 clone 了一个花了一天时间自己修修改改就成了我现在的 Blog！
+刚开始不太会用GitHub，把别人的项目 fork 了生怕会误点 pull request 给对方造成困扰，于是把项目 clone 了一个花了一天时间自己修修改改就成了我现在的 Blog！
 
 <p id = "build"></p>
 ---
