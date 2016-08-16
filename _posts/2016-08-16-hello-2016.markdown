@@ -1,0 +1,109 @@
+---
+layout:     post
+title:      "Hello 2016"
+subtitle:   " \"Hello World, Hello Jekyll\""
+date:       2016-08-16 02:32:00
+author:     "Theo"
+header-img: "img/post-bg/2016-08-16-hello-2016.jpg"
+catalog: true
+tags:
+    - 生活
+---
+
+> “Yeah, It's on.”
+
+## 极客之心的前世今生
+
+就像七年的时光就这么流逝了一样，Theo 的 Blog 也就这么开通了。
+
+[你也可以戳我 👉 跳过废话，直接看技术实现](#build) 
+
+博文的标题不应该叫Hello 2016的，因为在键盘上敲下这些文字时，已经2016 年 8月中旬了，Theo在法国留学生活快要满七个年头了。之所以想对2016说Hello是因为-总算有个地方可以好好写点东西了!
+
+我的学生生涯比较复杂：两年电气工程及工业信息化学士，一年对外法语教学方向语言科学学士，两年法语传播硕士。技术也好，人文科学也罢，我似乎总能感受到一颗对折腾又喜又怕的geek之心在跳腾。。。作为一个准程序员，早在2013年就想过闲暇时写写技术博客，或者自言自语聊聊人生，亦或者记记笔记也好。看过[worldpress](http://www.wordpress.com)建站教程，自己在[w3schools](http://www.w3schools.com)上学过HTML5和一点JS，大众博客程序虽然让你免费无代码建站，可是界面可定制性太低了，给分配的免费域名真心太丑太难记。上网查资料经常接触[简书](http://www.jianshu.com)，的确是个简洁优雅的博客平台，再加上支持markdown标记语言，果断注册了账号，最后发现中国的用户实在太多了，有些时候还是想一个人静静(其实是想装B吧喂)，再者可定制性低，觉得不好玩，因此也就没po什么文章，账号一直荒芜着。
+
+只剩下自己敲代码上传到网络空间然后搞个域名了这条路了。因为自己是初学者，没想用网站盈利，于是想找免费的网络空间练手，可是找来找去找不到靠谱又免费的网络空间提供商。
+
+今年年初家里签了法国orange电信公司的盒子，送了免费的网络空间可以用来建站，于是我兴致勃勃的用HTML5写了个小站，等到网站上线，想加点涉及到后端数据处理的功能的时候才发现免费的空间是不支持跑PHP等语言的。我可懒得在本地配置PHP啊! 做不上线的网站用来自娱自乐? 那还不如搞个微信公众号好玩呢! 个人觉得*学做站一定要上线才会有一直更新下去的动力*，于是这次大失所望地把project丢到一边再也不管了。 
+
+从2015 年 6月毕业后，一直零零碎碎的学习苹果的Swift语言，深深的喜欢Swift简洁优雅安全的特性。前天一次偶然的机会，刚刚学完了GitHub基础在逛[CocoaChina的Swift板块](http://www.cocoachina.com/swift)时偶然发现一个技术博客，觉得搞得很漂亮，于是追根溯源，发现居然是托管在GitHub上的。我马上来了兴趣，google了一番发现了一个惊天超级轻松时尚的快速建 Blog 的技术方案：[GitHub Pages](https://pages.github.com/) + [Jekyll](http://jekyllrb.com/)
+
+刚开始不太会用GitHub，把别人的项目folk了生怕会误点pull request 给对方造成困扰，于是把项目clone了一个花了一天时间自己修修改改就成了我现在的Blog！
+
+<p id = "build"></p>
+---
+
+## "GitHub Pages + Jekyll 博客" 这道料理
+
+接下来说说搭建这个博客的各种原料。不知道GitHub为何物的童鞋请百度谷歌一下自行脑补。我只说说[Jekyll](http://jekyllrb.com/)，根据官方的描述：
+
+> Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like *Markdown*) and our *Liquid* renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind *GitHub Pages*, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.
+
+什么意思呢? 其实是说Jekyll是一个用Ruby写的简单易用的静态站点生成器，它会把一个约定好的结构目录内的纯文本文件(例如Markdown)通过一个转换器和渲染器生成一个完整的立即可以上线的静态网站。GitHub Pages 后台的引擎就是Jekyll，因此你可以用它写你的工程展示网页，blog，或者其他类型的网站，托管在GitHub上。最重要的一点：竟!然!免!费!
+
+这么一来建站思路就很清晰了：先在本地编写符合Jekyll规范(文件目录的结构)的网站源码，然后上传到github，再由github生成并托管整个网站。或者，直接复制别人做好的主题模板，自己敲敲打打再传到github上。
+
+这么一来就可以看出这个建站方案的优点：
+
+* Jekyll 的自定制自由度很高，而且很容易入门，基本就是个模版引擎
+* 支持**Markdown**，可以享受非常**优雅的写作体验**。写博文只要用自己喜欢的编辑器就可以了，其他事情一概不用操心，都由github的Jekyll引擎处理。
+* 网站托管在Github上，原生享受**git的版本管理**功能，**不用担心文章遗失**。
+* 熟悉的 Git 工作流 ，**Git Commit 即 Blog Post**
+* 利用 GitHub Pages 的域名和**免费**和**无限空间**，不用自己折腾主机
+* 如果需要**自定义域名**，也只需要简单改改 DNS 加个 CNAME 就好了。比如我就是申请了一个tk免费一级域名然后设置了一下DNS。 
+
+有这么多优点必然也是有些不足的：
+
+* 要懂一点git和网页开发才容易上手，所以还是有一定技术门槛的。
+* Jekyll把你的markdown文件和一些配置文件转换成的网站是静态的，要想添加动态功能必须使用外部服务，比如评论功能就得用disqus或者多说。
+* 该技术不适合做大型网站，因为没有用到数据库，每运行一次都必须遍历全部的文本文件。也就是说网站越大博文越多，生成网站的时间越长。
+
+---
+
+如果你要 fork 或者 clone 一个现成的Jekyll主题模板，反正就是 Git 的流程，那还是相当顺手的。你也可以自己从零开始设计一个Jekyll主题，详见[这篇博文](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)。但是这样做就要进行一些配置，而且可能会遇到一些坑。
+
+我是直接clone了huxpro的Jekyll主题，该主题也是 fork 了有名的 Clean Blog，并且补上了标签的支持，在这里要狠狠感谢huxpro。
+
+如果你需要用命令行从头创建一个jekyll项目或者在本地调试你的jekyll网站，你需要 `gem install jekyll`。
+
+**重点**来了，由于jekyll是**Ruby**写的，所以必须先安装Ruby，好在Mac机这种编程神器的macOS系统原生就安装了Ruby，不信你可以在命令行运行 `ruby -v`。
+
+我是OS X EI Capitan 10.11.6 的系统，预装了Ruby 2.0.0，经过测试发现安装jekyll时会报错：
+> "You don't have write permissions for the /Library/Ruby/Gems/2.0.0 directory jekyll"
+
+其实不是有些外国网友说的sudo不sudo的权限问题，我估计可能是Ruby版本的问题，写这篇博文的时候稳定版的版本号已经更新到2.3.0了。
+
+![](http://theowu.tk/img/in-post/ruby-version.jpg)
+
+于是查到要用[RVM(Ruby Version Manager)](https://rvm.io/rvm/install)更新Ruby版本。
+
+要安装RVM，在terminal里输入如下代码：
+	\curl -sSL https://get.rvm.io | bash -s stable --ruby
+
+后面按提示来，又要求安装[Homebrew](http://brew.sh/index_zh-cn.html)，好吧，科普一下，Homebrew是类似于Linux中APT、Yum等的软件包管理系统，同类工具有MacPorts、Fink等。这时候命令行问你是否要安装到usr/local/目录下，好吧查了一下资料，确实是[Homebrew官方开发文档](https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Installation.md)推荐的安装目录，于是按下回车键一路安装。
+
+安装完RVM和Homebrew后就可以在terminal键入 `rvm install ruby-2.3.0` 安装最新版本的Ruby了。新版Ruby安完后一定不要忘记运行 `rvm use ruby-2.3.0` 设定使用最新版本的Ruby，不然是没有用的。
+
+好了现在可以用 `gem install jekyll` 安装Jekyll了! 呼呼，还是遇到了不少坑那!
+
+---
+
+主题的 CSS 是基于 Bootstrap 定制的，看得不爽的地方直接在 Less 里改就好了。
+
+最后就进入了耗时最长的**做图、写字**阶段，也算是进入了**写博客**的正轨，
+
+博文是用markdown写的，markdown很好上手，想学习的戳👉这个[Markdown语法说明](http://wowubuntu.com/markdown/#philosophy)。由于markdown兼容HTML5所以你不仅可以随便用自己喜欢的文档编辑器而且还可以在md文件内用HTML5代码! 最后，编辑好的md文件命名成yyyy-mm-dd-post-name.md的格式，例如2016-08-15-hello-2016.markdown，文件后缀名也可以是txt啊，html啊，md等等，取决于你想用什么格式写你的博文。然后把写好的文件放进网站根目录的_posts文件夹内，用git commit一下，博文就上线了!
+
+## Last but not least...
+
+这个博客诞生于个人兴趣以及一个穷人的极客之心(不过，正如热血高校里芹泽多摩雄说的一样：穷人很强😂)。虽然是套用了别人的开源模板，不过在折腾与爬坑的过程中准程序员的经验和等级不知道上升了多少呢😎。
+
+Git，Jekyll，markdown，yaml，RVM，hombrew，这些都是我两天前闻所未闻的概念，在两天的折腾中似乎都融入了我的血液。所以如果你对一件事感兴趣，去做吧，**不要放弃**，你在网上可以找到所有你需要的帮助资源，他们就在那里，只是需要你去**细心甄别**。我希望在自己的技术水平提高后能够给这个博客增加一些其他的炫酷功能。
+
+如果你恰好逛到了这里，希望你能喜欢这个博客主题，也希望和你一起进步。
+
+2016，希望你也遇见更好的自己。
+
+—— Théo 于 2016.08.16
+
+
