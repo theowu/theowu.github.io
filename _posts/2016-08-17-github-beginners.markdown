@@ -75,6 +75,7 @@ tags:
 我们先看 Angular 相对 React 有哪些优势。
 
 <span id="2"></span>
+
 #### **无选择性疲劳**
 
 Angular 是一个完整的框架，本身就提供了比 React 多得多的建议和功能。而要用 React，开发者通常还需要借助别的类库来打造一个真正的应用。比如你可能需要额外的库来处理路由、强制单向数据流、进行 API 调用、做测试以及管理依赖等等。要做的选择和决定太多了，让人很有压力。这也是为什么 React 有那么多的入门套件的原因（我自己就写了两个：[1](https://github.com/coryhouse/react-flux-starter-kit)、[2](https://github.com/coryhouse/react-slingshot)）。
