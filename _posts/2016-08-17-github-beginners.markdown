@@ -4,7 +4,7 @@ title:      "献给小白的GitHub入门魔法书「译」"
 subtitle:   "GitHub For Beginners: Don’t Get Scared, Get Started"
 date:       2016-08-17 14:20:00
 author:     "Theo"
-header-img: "image/post-bg/2016-08-17-github-beginners"
+header-img: "img/post-bg/2016-08-17-github-beginners.jpg"
 header-mask: 0.3
 catalog:    true
 tags:
