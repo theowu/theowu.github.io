@@ -40,6 +40,7 @@ tags:
 图片来源：[@新浪游戏](http://slide.games.sina.com.cn/c/slide_21_18723_33056.html#p=2)
 
 <span id="main"></span>
+---
 
 ## 目录
 
@@ -57,8 +58,10 @@ tags:
 	* [Git学习资源](#featured-tags)
 
 
+
 <span id="1"></span>
-## 两者根本不具有可比性！
+## GitHub寻寻觅觅
+
 
 是的是的，Angular 是框架，React 是类库。所以有人觉得比较这两者没有逻辑性可言。大错特错！
 
