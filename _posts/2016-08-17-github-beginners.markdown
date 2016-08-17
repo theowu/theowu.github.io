@@ -42,7 +42,7 @@ tags:
 ## 目录
 
 * 第一部分
-	* [GitHub寻寻觅觅](#Angular)
+	* [GitHub寻寻觅觅](#两者根本不具有可比性！)
 	* [什么是Git? Git，GitHub 傻傻分不清](#get-started)
 	* [Git的黑话](#write-posts)
 	* [Git特有的指令](#write-posts)
