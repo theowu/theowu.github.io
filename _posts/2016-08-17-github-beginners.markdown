@@ -40,7 +40,7 @@ tags:
 
 图片来源：[@新浪游戏](http://slide.games.sina.com.cn/c/slide_21_18723_33056.html#p=2)
 
-<a name="main"></a>
+<span id="main"></span>
 
 ## 目录
 
@@ -48,33 +48,26 @@ tags:
 	* [GitHub寻寻觅觅](#1)
 	* [什么是Git? Git，GitHub 傻傻分不清](#2)
 	* [Git的黑话](#3)
-	* [Git特有的指令](#write-posts)
-	* [Git和GitHub的初始设置](#write-posts)
-	* [获取线上Repo](#write-posts)
-	* [创建本地Repo](#write-posts)
+	* [Git特有的指令](#4)
+	* [Git和GitHub的初始设置](#5)
+	* [获取线上Repo](#6)
+	* [创建本地Repo](#7)
 * 第二部分
-	* [从本地Repo到GitHub线上Repo](#sidebar)
-	* [汇总时间到](#mini-about-me)
-	* [Git学习资源](#featured-tags)
+	* [从本地Repo到GitHub线上Repo](#8)
+	* [汇总时间到](#9)
+	* [Git学习资源](#10)
 
-
-
-<a name="1"></a>
+<span id="1"></span>
 
 ## GitHub寻寻觅觅
 
+<span id="2"></span>
 
-是的是的，Angular 是框架，React 是类库。所以有人觉得比较这两者没有逻辑性可言。大错特错！
-
-> 选择 Angular 还是 React 就像选择直接购买成品电脑还是买零件自己组装一样。
-
-两者的优缺点本文都会提及，我会拿 React 语法和组件模型跟 Angular 的语法和组件模型做对比。这就像是拿成品电脑的 CPU 跟零售的 CPU 做对比，没有任何不妥。
-
-## Angular
+## 什么是Git? Git，GitHub 傻傻分不清
 
 我们先看 Angular 相对 React 有哪些优势。
 
-<span id="2"></span>
+<span id="3"></span>
 
 #### **无选择性疲劳**
 
@@ -84,7 +77,8 @@ Angular 自带了不少主张，所以能够帮助你更快开始，不至于因
 
 Angular 核心团队让我非常欣赏的一点是，他们拥抱了 TypeScript，这就造成了另一个优势。
 
-<span id="3"></span>
+<span id="4"></span>
+
 #### TypeScript = 阳关大道
 
 没错，并非所有人都喜欢 TypeScript，但是 Angular 2 毅然决然地选择了它确实是个巨大的优势。反观 React，网上的各种示例应用令人沮丧地不一致——ES5 和 ES6 的项目基本上各占一半，而且目前存在[三种不同的组件声明方式](http://jamesknelson.com/should-i-use-react-createclass-es6-classes-or-stateless-functional-components/)。这无疑给初学者造成了困惑。（Angular 还拥抱了装饰器（decorator）而不是继承（extends）——很多人认为这也是个加分项）。
