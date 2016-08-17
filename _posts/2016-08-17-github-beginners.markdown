@@ -4,7 +4,7 @@ title:      "献给小白的GitHub入门魔法书「译」"
 subtitle:   "GitHub For Beginners: Don’t Get Scared, Get Started"
 date:       2016-08-17 14:20:00
 author:     "Theo"
-header-img: "img/post-bg-re-vs-ng2.jpg"
+header-img: "https://0huf0w.dm2301.livefilestore.com/y3mkNDVL46XPX-E3QqHSKt8p2QreHJUpIuPIkZS9Zxs5l-oywWdDzZZb-Y58nS5pj4il_LyAqNfCdUxB1d1cMTFU8ooQQ18_U_owezeHWLMrVrZO47QuoDdxmpirFQ6B3WSq7w-0qVMgMAKSuFRCKj-3Tq86K9v-IBRk6si-VYa9Nw?width=1900&height=870&cropmode=none"
 header-mask: 0.3
 catalog:    true
 tags:
@@ -12,6 +12,8 @@ tags:
     - GitHub
     - 译文
 ---
+
+<!-- 由于GitHub项目空间有限，从第二篇博文起，所有图片全部host在OneDrive上 -->
 
 > 这篇文章转载自 [readwrite网 CODE专栏 LAUREN ORSINI 发表的一篇文章](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/)。
 
@@ -65,6 +67,10 @@ tags:
 
 ## 什么是Git? Git，GitHub 傻傻分不清
 
+https://jahya.net/blog/git-vs-github/
+
+http://1ke.co/course/342
+
 <span id="03"></span>
 
 ## Git的黑话
@@ -99,7 +105,7 @@ tags:
 
 
 
-#### 无选择性**疲劳**
+#### 无选择性疲劳
 
 Angular 是一个完整的框架，本身就提供了比 React 多得多的建议和功能。而要用 React，开发者通常还需要借助别的类库来打造一个真正的应用。比如你可能需要额外的库来处理路由、强制单向数据流、进行 API 调用、做测试以及管理依赖等等。要做的选择和决定太多了，让人很有压力。这也是为什么 React 有那么多的入门套件的原因（我自己就写了两个：[1](https://github.com/coryhouse/react-flux-starter-kit)、[2](https://github.com/coryhouse/react-slingshot)）。
 
