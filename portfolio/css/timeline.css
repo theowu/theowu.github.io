@@ -182,6 +182,35 @@ body, html {
 	background-size: 22px;
 }
 
+/******* Venders logo added by Theo *****/
+
+.i-apple:before {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url("../images/logo-apple.png") 50% 50% no-repeat;
+	background-size: 22px;
+}
+
+.i-swift:before {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url("../images/logo-swift.png") 50% 50% no-repeat;
+	background-size: 22px;
+}
+
+.i-osx:before {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url("../images/logo-osx.png") 50% 50% no-repeat;
+	background-size: 22px;
+}
+
 /******* Theo Branch *****/
 html{
 	font-size: 90%;

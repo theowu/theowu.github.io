@@ -1,38 +1,13 @@
-#Hux Blog
+#Theo's Blog
 
-###[View Live Hux Blog &rarr;](http://theowu.github.io)
+###[View Live Theo's Blog &rarr;](http://theowu.github.io)
 
-![](http://huangxuan.me/img/blog-desktop.jpg)
-
-
-
-## Boilerplate (beta)
-
-Want to clone a boilerplate instead of my buzz blog? Here comes this!  
-
-```
-$ git clone git@github.com:Huxpro/huxblog-boilerplate.git
-```
-
-**[View Boilerplate Here &rarr;](http://huangxuan.me/huxblog-boilerplate/)**
-
-
-## Porting 
-
-- [**Hexo**](https://github.com/Kaijun/hexo-theme-huxblog) by @kaijun
-- [**React-SSR**](https://github.com/LucasIcarus/huxpro.github.io/tree/ssr) by @LucasIcarus
-
-## Translation
-
- - ![cn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png) **Chinese (Simplified)**: 感谢 [@BrucZhaoR](https://github.com/BruceZhaoR) 的 [中文翻译 &rarr;](https://github.com/Huxpro/huxpro.github.io/blob/master/README.zh.md)
+![](http://theowu.tk/img/blog-desktop.jpg)
 
 ## Features
 
-##### New Feature (V1.5.2)
-
-- Annoyed to delete my blog post after clone or pull? **Boilerplate** comes to help you get started quickly and easily merge update.
-- `-apple-system` is added in font rule, which display beautiful new font **San Francisco** in iOS 9 by default.
-- Fixed [issue#15](https://github.com/Huxpro/huxpro.github.io/issues/15) about code wrap.
+Theme coloned from [Hux Blog](https://github.com/huxpro/huxpro.github.io/)
+Below are features of historical versions:
 
 ##### New Feature (V1.5.1)
 
@@ -56,7 +31,7 @@ $ git clone git@github.com:Huxpro/huxblog-boilerplate.git
 
 - Big Improvement to the **Navigation Menu** *(especially in Android)*:  Dropping the old, stuttering, low-performance [Bootstrap collapse.js](http://getbootstrap.com/javascript/#collapse),  replaced with an own wrote, [jank free](http://jankfree.org/) navbar menu in a pretty high-performance implementation of [Google Material Design](https://www.google.com/design/spec/material-design/introduction.html).
 
-<img src="http://huangxuan.me/img/blog-md-navbar.gif" width="320" />
+<img src="http://theowu.tk/img/blog-md-navbar.gif" width="320" />
 
 
 ##### New Feature (V1.2)
@@ -82,9 +57,8 @@ $ git clone git@github.com:Huxpro/huxblog-boilerplate.git
 
 ## Support
 
-- **Feel free to fork. I'll Appreciate it if you keep the Author & Github link at footer**
+- **Feel free to fork or clone. I'll Appreciate it if you keep the Author & Github link at footer**
 - Give it a **Star** if you like, fork or just clone to use ;)
-- If any problem or requirement, just open an issue here and I will help you.
 
 
 ## Document
@@ -120,16 +94,16 @@ You can easily get started by modifying `_config.yml`:
 
 ```
 # Site settings
-title: Hux Blog             # title of your website
-SEOTitle: Hux Blog			# check out docs for more detail
-description: "Cool Blog"    # ...
+title: Theo's Blog          # title of your website
+SEOTitle: Theo's Blog		# check out docs for more detail
+description: "Cool Blog"    # write something to describe your website
 
 # SNS settings      
-github_username: huxpro     # modify this account to yours
-weibo_username: huxpro      # the footer woule be auto-updated.
+github_username: theowu     # modify this account to yours
+weibo_username: 1919490675  # the footer woule be auto-updated.
 
 # Build settings
-# paginate: 10              # nums of posts in one page
+# paginate: 10              # nums of posts in one page, in this case, 10
 ```
 
 There are more options you can check out in the [Jekyll - Official Site](http://jekyllrb.com/), or you can directly dive into code to find more.
@@ -144,11 +118,11 @@ The **front-matter** of a post looks like that:
 ```
 ---
 layout:     post
-title:      "Hello 2015"
-subtitle:   "Hello World, Hello Blog"
+title:      "Hello 2016"
+subtitle:   "Hello World, Hello Jekyll"
 date:       2015-01-29 12:00:00
-author:     "Hux"
-header-img: "img/post-bg-2015.jpg"
+author:     "Thep"
+header-img: "img/post-bg/2016-08-16-hello-2016.jpg"
 tags:
     - Life
 ---
@@ -157,7 +131,7 @@ tags:
 
 #### SideBar
 
-![](http://huangxuan.me/img/blog-sidebar.jpg)
+![](http://theowu.tk/img/blog-sidebar.jpg)
 
 Seeing more information may be necessary for you to display, from V1.1, a clean, gorgeous **SideBar** is added for you, which provide more area for displaying possible modules. You can enable *(it is default enable)* this feature by simply config:
 
@@ -165,7 +139,7 @@ Seeing more information may be necessary for you to display, from V1.1, a clean,
 # Sidebar settings
 sidebar: true
 sidebar-about-description: "your description here"
-sidebar-avatar: /img/avatar-hux.jpg     # use absolute URL.
+sidebar-avatar: /img/avatar-theo.jpg     # please use absolute URL.
 ```
 
 We default support *[Featured Tags](#featured-tags)*, *[Mini About Me](#mini-about-me)* and *[Friends](#friends)* these three modules and you can add your own. The sidebar is naturally responsive and would be push to bottom in a small screen size (`<= 992px`, according to [Bootstarp Grid System](http://getbootstrap.com/css/#grid))  
@@ -194,7 +168,7 @@ Internally, a condition template `{% if tag[1].size > {{site.featured-condition-
 
 #### Friends
 
-Friends is a very common feature of a blog seeing the SEO, so I add it in V1.1 release to help that.   
+Friends is a very common feature of a blog seeing the SEO, so Huxpro add it in V1.1 release to help that.   
 Friends can also live without enable sidebar, also be displayed in the bottom when sidebar unable, and be displayed in every post page bottom.
 
 
@@ -203,6 +177,10 @@ You can just add your friends information in `_config.yml` with a familiar JSON 
 ```
 # Friends
 friends: [
+    {
+        title: "Theo's Blog",
+        href: "http://theowu.github.io/"
+    },
     {
         title: "Foo Blog",
         href: "http://foo.github.io/"
@@ -217,7 +195,7 @@ friends: [
 
 #### Keynote Layout
 
-![](http://huangxuan.me/img/blog-keynote.jpg)
+![](http://theowu.tk/img/blog-keynote.jpg)
 
 There is a increasing tendency to use Open Web technology to create keynotes, presentations, like Reveal.js, Impress.js, Slides, Prezi etc. I consider a modern blog should have abilities to post these HTML based presentation easily also abilities to play it directly.
 
@@ -226,7 +204,7 @@ Under the hood, a `iframe` is used to include webpage from outer source, so the 
 ```
 ---
 layout:     keynote
-iframe:     "http://huangxuan.me/js-module-7day/"
+iframe:     "http://theowu.tk/js-module-7day/"
 ---
 ```
 
@@ -237,9 +215,9 @@ The iframe will be automatically resized to adapt different form factors also th
 
 This theme support both [Disqus](http://disqus.com) and [Duoshuo](http://duoshuo.com) as the third party discussion system.
 
-First, you need to sign up and get your own account. **Repeat, DO NOT use mine!** (I have set Trusted Domains) It is deathly simple to sign up and you will get the full power of management system. Please give it a try!
+First, you need to sign up and get your own account. **Repeat, DO NOT use mine!** (I have set Trusted Domains), otherwise, you will have problems. It is deathly simple to sign up and you will get the full power of management system. Please give it a try!
 
-Second, from V1.5, you can easily complete your comment configuration by just adding your **short name** into `_config.yml`:
+Second, thanks to huxpro, from V1.5, you can easily complete your comment configuration by just adding your **short name** into `_config.yml`:
 
 ```
 duoshuo_username: _your_duoshuo_short_name_
@@ -268,32 +246,23 @@ ga_domain: huangxuan.me
 
 Just checkout the code offered by Google/Baidu, and copy paste here, all the rest is already done for you.
 
-
-
 #### Customization
 
-If you wanna do more customization and change code yourself, a [Grunt](gruntjs.com) environment is also included. (Thanks to Clean Blog.)
+If you wanna do more customization and change code yourself, a [Grunt](gruntjs.com) environment is also included. (Thanks to the famous Clean Blog.)
 
-There are a number of tasks it performs like minification of the JavaScript, compiling of the LESS files, adding banners to keep the Apache 2.0 license intact, and watching for changes. Run the grunt default task by entering `grunt ` into your command line which will build the files. You can use `grunt watch` if you are working on the JavaScript or the LESS.
+There are a number of tasks it performs like minification of the JavaScript, compiling of the LESS files, adding banners to keep the Apache 2.0 license intact, and watching for changes. Run the grunt default task by entering `grunt` into your command line which will build the files. You can use `grunt watch` if you are working on the JavaScript or the LESS.
 
 **Try to understand code in `_include/` and `_layouts/`, then you can modify Jekyll [Liquid](https://github.com/Shopify/liquid/wiki) template directly to do more creative customization.**
 
 
 #### Header Image
 
-Change header images of any pages or any posts is pretty easy as mentioned above. But, thanks to [issue #6 (in Chinese)](https://github.com/Huxpro/huxpro.github.io/issues/6) asked, **how to make it looks great?**
-
-**Well...it is actually a design issue**, not a coding stuff. It is better that you have basic design knowledge, but not is ok, let me told you how to make it well-designed:
-
-Seeing the title text above image is **white**, the image should be **dark** to emphasize the contract. so we can easily add a **black overlay with fews of opacity**, which is depends on the brightness of the original images you used. you can process it in Photoshop, Sketch etc.
-
-In technical views, it can be done with CSS. However, the opacity of the black overlay is really hard to assigned, **every image has different brightness so the  degree it should be adjusted is different so it is impossible to hard code it.**
-
+Change header images of any pages or any posts is pretty easy as mentioned above. It can be done in every post you write in your favorite markdown or html language.
 
 #### SEO Title
 
 Before V1.4, site setting `title` is not only used for displayed in Home Page and Navbar, but also used to generate the `<title>` in HTML.
-It's possible that you want the two things different. For me, my site-title is **“Hux Blog”** but I want the title shows in search engine is **“黄玄的博客 | Hux Blog”** which is multi-language.
+It's possible that you want the two things different. For me, my site-title is **“Theo's Blog”** but I want the title shows in search engine is **“吴思元的博客 | Theo's Blog”** which is multi-language.
 
 So, the SEO Title is introduced to solve this problem, you can set `SEOTitle` different from `title`, and it would be only used to generate HTML `<title>` and setting DuoShuo Sharing.
 
@@ -309,7 +278,13 @@ So, just edit `_config.yml`, find `highlighter: pygments`, change it to `highlig
 
 For other circumstance, check out existing issues or create a new one!
 
+## Porting 
+
+- [**Hexo**](https://github.com/Kaijun/hexo-theme-huxblog) by @kaijun
+- [**React-SSR**](https://github.com/LucasIcarus/huxpro.github.io/tree/ssr) by @LucasIcarus
+
 ## Thanks
 
-This theme is forked from [IronSummitMedia/startbootstrap-clean-blog-jekyll](https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll)  
+This theme is cloned from [Hux Blog](https://github.com/huxpro/huxpro.github.io/) which is forked from [IronSummitMedia/startbootstrap-clean-blog-jekyll](https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll). Special thanks to these people.  
+
 Thanks Jekyll and Github Pages!
