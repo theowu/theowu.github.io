@@ -4,7 +4,7 @@ title:      "献给小白的GitHub入门魔法书「译」"
 subtitle:   "GitHub For Beginners: Don’t Get Scared, Get Started"
 date:       2016-08-17 14:20:00
 author:     "Theo"
-header-img: "https://0huf0w.dm2301.livefilestore.com/y3mkNDVL46XPX-E3QqHSKt8p2QreHJUpIuPIkZS9Zxs5l-oywWdDzZZb-Y58nS5pj4il_LyAqNfCdUxB1d1cMTFU8ooQQ18_U_owezeHWLMrVrZO47QuoDdxmpirFQ6B3WSq7w-0qVMgMAKSuFRCKj-3Tq86K9v-IBRk6si-VYa9Nw?width=1900&height=870&cropmode=none"
+header-img: "image/post-bg/2016-08-17-github-beginners"
 header-mask: 0.3
 catalog:    true
 tags:
@@ -13,7 +13,7 @@ tags:
     - 译文
 ---
 
-<!-- 由于GitHub项目空间有限，从第二篇博文起，所有图片全部host在OneDrive上 -->
+<!-- 由于GitHub项目空间有限，从第二篇博文起，除了post-bg，所有图片全部host在OneDrive上 -->
 
 > 这篇文章转载自 [readwrite网 CODE专栏 LAUREN ORSINI 发表的一篇文章](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/)。
 
