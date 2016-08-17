@@ -43,8 +43,8 @@ tags:
 
 * 第一部分
 	* [GitHub寻寻觅觅](#两者根本不具有可比性！)
-	* [什么是Git? Git，GitHub 傻傻分不清](#get-started)
-	* [Git的黑话](#write-posts)
+	* [什么是Git? Git，GitHub 傻傻分不清](#angular)
+	* [Git的黑话](#hello-world)
 	* [Git特有的指令](#write-posts)
 	* [Git和GitHub的初始设置](#write-posts)
 	* [获取线上Repo](#write-posts)
@@ -259,7 +259,7 @@ Unix 久经沙场屹立不倒，原因就是：
 
 React 作为一个专注、可组合并且目的单一的工具，已经被[全世界的各大网站们](https://github.com/facebook/react/wiki/Sites-Using-React)使用，预示着它的前途光明（当然，Angular 也被用于[许多大牌网站](https://www.madewithangular.com/#/)）。
 
-#### 谢幕之战
+## Hello world
 
 Angular 2 相比第一代有着长足的进步。新的组件模型比第一代的指令（directives）易学许多；新增了对于同构／服务器端渲染的支持；使用虚拟 DOM 提供了 3-10 倍的性能提升。这些改进使得 Angular 2 与 React 旗鼓相当。不可否认，它功能齐全、观点鲜明，能够显著减少 “JavaScript 疲劳” 。
 
