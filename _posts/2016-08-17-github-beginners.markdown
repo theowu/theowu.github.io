@@ -23,7 +23,7 @@ tags:
 **免责声明：**原文的内容会有改动，如果作者对此感到不爽可以联系我进行修改或者删除，谢谢。
 
 ## 引语
-> 这篇文章是献给小白们的，老鸟们笑笑就好。不喜勿拍。
+> 这篇文章是献给小白们的，老鸟们笑笑就好。不喜勿拍。[你也可以戳我 👉 跳过废话，直接看正文](#main) 
 
 > 相信小白们的世界里总会出现一个光怪陆离的物事那就是GitHub。至少Theo以前是这样的：<br>
 有时候，下载一些开源软件，咦，怎么跑到这个不知所云的网站来了🤔。<br>
@@ -39,11 +39,12 @@ tags:
 
 图片来源：[@新浪游戏](http://slide.games.sina.com.cn/c/slide_21_18723_33056.html#p=2)
 
+<span id="main">
 ## 目录
 
 * 第一部分
-	* [GitHub寻寻觅觅](#两者根本不具有可比性！)
-	* [什么是Git? Git，GitHub 傻傻分不清](#angular)
+	* [GitHub寻寻觅觅](#1)
+	* [什么是Git? Git，GitHub 傻傻分不清](#2)
 	* [Git的黑话](#hello-world)
 	* [Git特有的指令](#write-posts)
 	* [Git和GitHub的初始设置](#write-posts)
@@ -55,7 +56,7 @@ tags:
 	* [Git学习资源](#featured-tags)
 
 
-
+<span id="1">
 ## 两者根本不具有可比性！
 
 是的是的，Angular 是框架，React 是类库。所以有人觉得比较这两者没有逻辑性可言。大错特错！
@@ -68,6 +69,7 @@ tags:
 
 我们先看 Angular 相对 React 有哪些优势。
 
+<span id="2">
 #### **无选择性疲劳**
 
 Angular 是一个完整的框架，本身就提供了比 React 多得多的建议和功能。而要用 React，开发者通常还需要借助别的类库来打造一个真正的应用。比如你可能需要额外的库来处理路由、强制单向数据流、进行 API 调用、做测试以及管理依赖等等。要做的选择和决定太多了，让人很有压力。这也是为什么 React 有那么多的入门套件的原因（我自己就写了两个：[1](https://github.com/coryhouse/react-flux-starter-kit)、[2](https://github.com/coryhouse/react-slingshot)）。
