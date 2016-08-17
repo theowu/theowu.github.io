@@ -45,31 +45,61 @@ tags:
 ## 目录
 
 * 第一部分
-	* [GitHub寻寻觅觅](#1)
-	* [什么是Git? Git，GitHub 傻傻分不清](#2)
-	* [Git的黑话](#3)
-	* [Git特有的指令](#4)
-	* [Git和GitHub的初始设置](#5)
-	* [获取线上Repo](#6)
-	* [创建本地Repo](#7)
+	* [GitHub寻寻觅觅](#01)
+	* [什么是Git? Git，GitHub 傻傻分不清](#02)
+	* [Git的黑话](#03)
+	* [Git特有的指令](#04)
+	* [Git和GitHub的初始设置](#05)
+	* [获取线上Repo](#06)
+	* [创建本地Repo](#07)
 * 第二部分
-	* [从本地Repo到GitHub线上Repo](#8)
-	* [汇总时间到](#9)
+	* [从本地Repo到GitHub线上Repo](#08)
+	* [汇总时间到!](#09)
 	* [Git学习资源](#10)
 
-<span id="1"></span>
+<span id="01"></span>
 
 ## GitHub寻寻觅觅
 
-<span id="2"></span>
+<span id="02"></span>
 
 ## 什么是Git? Git，GitHub 傻傻分不清
 
-我们先看 Angular 相对 React 有哪些优势。
+<span id="03"></span>
 
-<span id="3"></span>
+## Git的黑话
 
-#### **无选择性疲劳**
+<span id="04"></span>
+
+## Git特有的指令
+
+<span id="05"></span>
+
+## Git和GitHub的初始设置
+
+<span id="06"></span>
+
+## 获取线上Repo
+
+<span id="07"></span>
+
+## 创建本地Repo
+
+<span id="08"></span>
+
+## 从本地Repo到GitHub线上Repo
+
+<span id="09"></span>
+
+## 汇总时间到!
+
+<span id="10"></span>
+
+## Git学习资源
+
+
+
+#### 无选择性**疲劳**
 
 Angular 是一个完整的框架，本身就提供了比 React 多得多的建议和功能。而要用 React，开发者通常还需要借助别的类库来打造一个真正的应用。比如你可能需要额外的库来处理路由、强制单向数据流、进行 API 调用、做测试以及管理依赖等等。要做的选择和决定太多了，让人很有压力。这也是为什么 React 有那么多的入门套件的原因（我自己就写了两个：[1](https://github.com/coryhouse/react-flux-starter-kit)、[2](https://github.com/coryhouse/react-slingshot)）。
 
