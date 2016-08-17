@@ -40,8 +40,7 @@ tags:
 
 图片来源：[@新浪游戏](http://slide.games.sina.com.cn/c/slide_21_18723_33056.html#p=2)
 
-<p id="main"></p>
----
+<a name="main"></a>
 
 ## 目录
 
@@ -60,7 +59,7 @@ tags:
 
 
 
-<p id="1"></p>
+<a name="1"></a>
 ## GitHub寻寻觅觅
 
 
