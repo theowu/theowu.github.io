@@ -40,14 +40,13 @@ tags:
 图片来源：[@新浪游戏](http://slide.games.sina.com.cn/c/slide_21_18723_33056.html#p=2)
 
 <span id="main"></span>
----
 
 ## 目录
 
 * 第一部分
 	* [GitHub寻寻觅觅](#1)
 	* [什么是Git? Git，GitHub 傻傻分不清](#2)
-	* [Git的黑话](#hello-world)
+	* [Git的黑话](#3)
 	* [Git特有的指令](#write-posts)
 	* [Git和GitHub的初始设置](#write-posts)
 	* [获取线上Repo](#write-posts)
@@ -59,7 +58,6 @@ tags:
 
 
 <span id="1"></span>
-
 ## 两者根本不具有可比性！
 
 是的是的，Angular 是框架，React 是类库。所以有人觉得比较这两者没有逻辑性可言。大错特错！
@@ -73,7 +71,6 @@ tags:
 我们先看 Angular 相对 React 有哪些优势。
 
 <span id="2"></span>
-
 #### **无选择性疲劳**
 
 Angular 是一个完整的框架，本身就提供了比 React 多得多的建议和功能。而要用 React，开发者通常还需要借助别的类库来打造一个真正的应用。比如你可能需要额外的库来处理路由、强制单向数据流、进行 API 调用、做测试以及管理依赖等等。要做的选择和决定太多了，让人很有压力。这也是为什么 React 有那么多的入门套件的原因（我自己就写了两个：[1](https://github.com/coryhouse/react-flux-starter-kit)、[2](https://github.com/coryhouse/react-slingshot)）。
@@ -82,6 +79,7 @@ Angular 自带了不少主张，所以能够帮助你更快开始，不至于因
 
 Angular 核心团队让我非常欣赏的一点是，他们拥抱了 TypeScript，这就造成了另一个优势。
 
+<span id="3"></span>
 #### TypeScript = 阳关大道
 
 没错，并非所有人都喜欢 TypeScript，但是 Angular 2 毅然决然地选择了它确实是个巨大的优势。反观 React，网上的各种示例应用令人沮丧地不一致——ES5 和 ES6 的项目基本上各占一半，而且目前存在[三种不同的组件声明方式](http://jamesknelson.com/should-i-use-react-createclass-es6-classes-or-stateless-functional-components/)。这无疑给初学者造成了困惑。（Angular 还拥抱了装饰器（decorator）而不是继承（extends）——很多人认为这也是个加分项）。
