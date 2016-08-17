@@ -75,7 +75,7 @@ tags:
 > "You don't have write permissions for the /Library/Ruby/Gems/2.0.0 directory jekyll"
 
 其实不是有些外国网友说的sudo不sudo的权限问题，我估计可能是Ruby版本的问题，写这篇博文的时候稳定版的版本号已经更新到2.3.0了。
-![](http://theowu.tk/img/in-post/ruby-version.jpg)
+![](https://0rsexw.dm2301.livefilestore.com/y3m4Q4Pc0pKhVe1aXO_s4E97m8BPp-iH7IAufd95lPZV7GVYBKh3mBQ_5bHh24TABvyoiVXbxyjm0-qfWT2OI5a-LV_0-YziQ6V1k08tocMCQNBt2-xT2UoULOjyWJBY-mSER1EaW2LfPdbbRWkxLbm8HNG_bVI1ZChFnP-HTjAICM?width=2004&height=1290&cropmode=none)
 于是查到要用[RVM(Ruby Version Manager)](https://rvm.io/rvm/install)更新Ruby版本。
 
 要安装RVM，在terminal里输入如下代码：
