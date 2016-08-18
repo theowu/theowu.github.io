@@ -80,7 +80,7 @@ tags:
 
 令人尴尬的是，我撰写这篇博文是因为所有我读的"GitHub菜鸟教程"都让我看的一个头两个大。也许也是因为我编程基础差吧，其实大部分 **GitHub** 用户编程水准也没那么高😂。总之大部分教程都没把我这只笨鸟教会。
 
-不过你有可能不知道，就算你不是一只程序猿，你也有一千零一条理由去用 **GitHub**。根据 **GitHub** 的教学视频，任何脑力工作者(其实就是搞电脑的)都可以从 **GitHub** 收益。
+不过你有可能不知道，就算你不是一只程序猿，你也有一千零一条理由去用 **GitHub**。根据 **GitHub** 的教学视频，任何脑力工作者(其实就是搞电脑的)都可以从 **GitHub** 受益。
 
 > 如果你之前放弃过学习 **GitHub**，这篇文章就是为你而写的。
 
@@ -284,7 +284,7 @@ tags:
 
 ## 08. 联通本地Repo和GitHub线上Repo
 
-同时拥有本地和远程 **Repo** 是美妙的🎊🎉。**你可以在本地一心一意地敲敲打打修修补补，不用管朋友圈里的炫耀谎言谣言或者其他怪相或者烂事**，等你完工后只要退送到 **GitHub** 就可以骄傲滴让你的小伙伴们看到你都捣鼓了啥子出来😋。
+同时拥有本地和远程 **Repo** 是美妙的🎊🎉。**你可以在本地一心一意地敲敲打打修修补补，不用管朋友圈里的炫耀谎言谣言或者其他怪相或者烂事**，等你完工后只要推送到 **GitHub** 就可以骄傲滴让你的小伙伴们看到你都捣鼓了啥子出来😋。
 
 这样做也方便多个小伙伴在同一个项目上贡献自己的力量。小伙伴们可以在自己的电脑上各行其事，完工后把自己的成果推送到 **GitHub** 上。So，小伙伴们，让我们开黑吧!
 
@@ -298,7 +298,7 @@ tags:
 
 翻译过来就是：**git 远程 添加 源 http://github.com/`用户名`/`项目名`.git**。不用Theo解释，聪明如你应该会懂吧。
 
-**Git** 现在知道这个线上 **Repo** 的存在了，那就是你本地做出的修改要同步过去的地方。命令行键入以下命令确认一下：
+**Git** 现在知道这个线上 **Repo** 的存在了，那就是你要把本地做出的修改同步过去的地方。命令行键入以下命令确认一下：
 
 	git remote -v
 
@@ -323,7 +323,8 @@ tags:
 但是你也许会觉得："我读书少，表骗我😒"，或者内心有一万只**草泥马**在奔腾。你确定这样就可以自己动手丰衣足食了吗，至少我是不行的。
 
 <figure>
-    <img src="https://2xuf0w.dm2301.livefilestore.com/y3pdhgorMi2PJRiD7nZDiR4EctAqOMofpvPCZZrpRcfIvRaGkEkWEHVt-Y2lb5LIoJAQkPUVHSpi9WfpEgn-qT-hs2VK_kOLIyv7SsXD7aaeK-CzOBXYSRhtQ6kl6H7wO0x5jHeNqzxGOYgjheE1wIFaw/alpaca.gif" width="240" height="145">
+    <!-- <img src="https://2xuf0w.dm2301.livefilestore.com/y3pdhgorMi2PJRiD7nZDiR4EctAqOMofpvPCZZrpRcfIvRaGkEkWEHVt-Y2lb5LIoJAQkPUVHSpi9WfpEgn-qT-hs2VK_kOLIyv7SsXD7aaeK-CzOBXYSRhtQ6kl6H7wO0x5jHeNqzxGOYgjheE1wIFaw/alpaca.gif" width="240" height="145"> -->
+    <img src="../img/gif/alpaca.gif" width="240" height="145">
     <img src="https://0htiow.dm2301.livefilestore.com/y3mJkndXMKaPgnk4BeTT_G8RPFC4tZeiP9dPtkkATgIhvVpW77LcKWgqC4Gl6sq-GLV5ccgVcgSIfk8ztDBnRrG7yt3rlXh88E50zYCDh_h0kUFL-jxNSbtGDI2t9jdeLY0Xr202vIqi66obBAsZW3Mb2GpkdUZu4gp-9ZuGvBuQCg?width=500&height=273&cropmode=none" width="240" height="145">
     <img src="https://0xtiow.dm2301.livefilestore.com/y3mD0RoZ63KZLeAWvdw7V67AcIriIZ20rpM9M2V1Wo-qkxXXZJUeJzIrc4wXkUvwQBMpSOYedR-8jRJx7sw8ed3WQMG7B5KXXTC8bc-QnXOhkkwrVeZbistk8Yo8_O1uS4nycyzkPio6vX24HLF8qJSnzFJzSx9CeFzMLnKP8sRHCc?width=640&height=386&cropmode=none" width="240" height="145">
 </figure>
