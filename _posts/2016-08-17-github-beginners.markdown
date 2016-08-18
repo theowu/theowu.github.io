@@ -324,7 +324,7 @@ tags:
 
 <figure>
     <!-- <img src="https://2xuf0w.dm2301.livefilestore.com/y3pdhgorMi2PJRiD7nZDiR4EctAqOMofpvPCZZrpRcfIvRaGkEkWEHVt-Y2lb5LIoJAQkPUVHSpi9WfpEgn-qT-hs2VK_kOLIyv7SsXD7aaeK-CzOBXYSRhtQ6kl6H7wO0x5jHeNqzxGOYgjheE1wIFaw/alpaca.gif" width="240" height="145"> -->
-    <img src="../img/gif/alpaca.gif" width="240" height="145">
+    <img src="http://theowu.tk/img/gif/alpaca.gif" width="240" height="145">
     <img src="https://0htiow.dm2301.livefilestore.com/y3mJkndXMKaPgnk4BeTT_G8RPFC4tZeiP9dPtkkATgIhvVpW77LcKWgqC4Gl6sq-GLV5ccgVcgSIfk8ztDBnRrG7yt3rlXh88E50zYCDh_h0kUFL-jxNSbtGDI2t9jdeLY0Xr202vIqi66obBAsZW3Mb2GpkdUZu4gp-9ZuGvBuQCg?width=500&height=273&cropmode=none" width="240" height="145">
     <img src="https://0xtiow.dm2301.livefilestore.com/y3mD0RoZ63KZLeAWvdw7V67AcIriIZ20rpM9M2V1Wo-qkxXXZJUeJzIrc4wXkUvwQBMpSOYedR-8jRJx7sw8ed3WQMG7B5KXXTC8bc-QnXOhkkwrVeZbistk8Yo8_O1uS4nycyzkPio6vX24HLF8qJSnzFJzSx9CeFzMLnKP8sRHCc?width=640&height=386&cropmode=none" width="240" height="145">
 </figure>
