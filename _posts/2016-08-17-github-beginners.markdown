@@ -13,7 +13,7 @@ tags:
     - 译文
 ---
 
-<!-- 由于GitHub项目空间有限，从第二篇博文起，除了post-bg，所有图片全部host在OneDrive上 -->
+<!-- 由于GitHub项目空间有限，除了post-bg，所有图片全部host在OneDrive上 -->
 
 > 这篇文章转载自 [readwrite网 CODE专栏 LAUREN ORSINI 发表的一篇文章](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/)。
 
@@ -21,8 +21,9 @@ tags:
 
 - Theo在最近一篇博文里提到过Git，其实Theo也是前两天才学，所以写来自己复习。
 - 原文写的确实很系统很好，连法国的博主都搬回去翻译过。
+- 另外，如果你喜欢并已经会使用图形化操作界面的 **[桌面版GitHub](https://desktop.github.com)**，又不想和命令行或者 Terminal 打交道，你完全可以不学 **Git**，但是 **建议你最好还是了解一下背后的机理**。
 
-**免责声明：**原文的内容会有改动，如果作者对此感到不爽可以联系我进行修改或者删除，谢谢。
+**免责声明：**原文的内容会有改动，如果作者对此感到不爽可以<a target="_blank" href="http://theowu.tk/about/">联系我</a>进行修改或者删除，谢谢。
 
 ## 引语
 
@@ -38,7 +39,10 @@ tags:
 
 施主，出来混，总有一天要学会宝刀怎么耍吧 。。。
 
-<img src="https://2xsexw.dm2301.livefilestore.com/y3mb7-b5x_EfKMFCH7Sk3sUiSrIWzMIn8DwgdCWR8NacJaH7xeAbiekwVKraXYEuEV7cDPRfjPmxQsBisGVvK2UcZ9LBvL2ZL-Usa8xctgohJWuFlJJLneGIQu1D42E6MUtLD6EmJzMMg1nIaDFzCYAAZR6PhHmhkvAH6L4aoGu5II?width=439&height=660&cropmode=none" width="219" height="330" />
+<figure align="center">
+	<img src="https://2xsexw.dm2301.livefilestore.com/y3mb7-b5x_EfKMFCH7Sk3sUiSrIWzMIn8DwgdCWR8NacJaH7xeAbiekwVKraXYEuEV7cDPRfjPmxQsBisGVvK2UcZ9LBvL2ZL-Usa8xctgohJWuFlJJLneGIQu1D42E6MUtLD6EmJzMMg1nIaDFzCYAAZR6PhHmhkvAH6L4aoGu5II?width=439&height=660&cropmode=none" width="219" height="330" style="border-radius:10px;">
+</figure>
+
 
 图片来源：[@新浪游戏](http://slide.games.sina.com.cn/c/slide_21_18723_33056.html#p=2)
 
@@ -46,28 +50,33 @@ tags:
 
 ## 目录
 
-* 第一部分
+* [第一部分](#part01)
 	* [01. GitHub寻寻觅觅](#01)
 	* [02. 什么是Git? Git，GitHub 傻傻分不清](#02)
 	* [03. Git的黑话](#03)
 	* [04. Git特有的指令](#04)
-	* [05. Git和GitHub的初始设置](#05)
-	* [06. 获取线上Repo](#06)
+	* [05. GitHub和Git的初始设置](#05)
+	* [06. 创建线上Repo](#06)
 	* [07. 创建本地Repo](#07)
-* 第二部分
-	* [08. 从本地Repo到GitHub线上Repo](#08)
+* [第二部分](#part02)
+	* [08. 联通本地Repo和GitHub线上Repo](#08)
 	* [09. 汇总时间到!](#09)
 	* [10. Git学习资源](#10)
+* [著作权声明](#copyright)
 
-<span id="01"></span>
+<span id="part01"></span>
 
-## 01. GitHub寻寻觅觅
+# 第一部分
 
 2016年了，你逃不掉的：学不会 **GitHub** 就再也别出去撩妹了。
 
 为什么? 因为它是一个颠覆我们工作方式的 **社交网络**。今天的 **GitHub** 已经从一个开发者的 **协同合作工作平台** 摇身一变成为了世界上最大的 **合作项目的集结地**。无论你是想下手和大家一起愉快地料理，还是继续做抓取人类知识结晶的伸手党，你都得去那里。
 
 只要你注册一个账号，你就能像在谷歌和脸书上那样点赞社交。**GitHub** 创办之前，主流商业公司研究或者发现什么都是保密的。今天，当你逛到他们的 **GitHub** 主页，你可以免费下载，研究，学习他们托管在网上的所有东西，并以他们为材料去构建你想构建的任何东西。骚年，你还在等什么?
+
+<span id="01"></span>
+
+## 01. GitHub寻寻觅觅
 
 令人尴尬的是，我撰写这篇博文是因为所有我读的"GitHub菜鸟教程"都让我看的一个头两个大。也许也是因为我编程基础差吧，其实大部分 **GitHub** 用户编程水准也没那么高😂。总之大部分教程都没把我这只笨鸟教会。
 
@@ -80,246 +89,333 @@ tags:
 ![](https://0xuf0w.dm2301.livefilestore.com/y3mxShykWcfrRvvV3C7Tvo3UDom6Th7Hty7vr6R8UkPuVoHvi5U__K1hbNV7XXEIMsjeP4zlxqZ1dGwXDVs1zRUc1ppF82dTNfGtvIOvUd2DSmz52dcqPhnery0eEI406ueJglvKp_LH-DH6aZix5xC3dFjzfekR4ugII_HFycmE34?width=1024&height=627&cropmode=none)
 我的 **GitHub** 主页 ☝️
 
+你的社交网络账号可能多的数不过来，但是我敢保证没有一个的[服务条款](https://help.github.com/articles/github-terms-of-service/)能好过 **GitHub** 的。如果你去瞅一眼条款的F项，你会发现**GitHub** 使出了吃奶的劲来保证你上传所有东西的所有权：
+
+> "We claim no intellectual property rights over the material you provide to the Service. Your profile and materials uploaded remain yours."
+
+更爽的是，就算你觉得代码看起来像天书，你也能使用 **GitHub**。你不需要任何教程就可以注册一个账号然后东踩踩西逛逛。但是我觉得最好还是从基础学起，就是说敲两行 **Git** 的命令。说到底 **GitHub** 其实是执行 **Git** 命令的最简单直白的 **图形化用户界面了**。  
+
 <span id="02"></span>
 
-## 什么是Git? Git，GitHub 傻傻分不清
+## 02. 什么是Git? Git，GitHub 傻傻分不清
 
-https://jahya.net/blog/git-vs-github/
+膜拜 **[Linux Torvalds](https://zh.wikipedia.org/wiki/林纳斯·托瓦兹)** 吧! 他是著名的软件开发者，**Linux操作系统**之父，就是这家伙写的 **Git** - 运行在 **GitHub** 核心的软件。**Git** 是一个版本控制软件，就是说它会在项目文件被修改的时候保证不覆盖这些文件。**Torvalds** 和他的核心开发成员使用 **Git** 去开发 **Linux** 的内核，**Git** 逐渐流行了起来。
 
-http://1ke.co/course/342
+为什么要玩 **Git** 这玩意? 想象一下你和你的同事同时在修改同一个网站的网页文件。你改你的，他改他的，能有什么问题? 假如你和他同时修改的是同一个网页文件，问题就来了。你们俩至少有一个人做出的修改会被另一个人干掉。
+
+一个类似 **Git** 的版本控制应用可以避免以上情形的发生。你和你的同事可以同时上传对同一个文件的修改和校对，**Git** 会做两次备份。然后你们可以把文件的变动合并，这样不会丢失任何一方做出的修改。你甚至可以在任何时候把文件回滚到早前的版本，因为 **Git** 给每一个做出的修改都照了"快照"。
+
+**Git** 的缺点就是年龄一大把了，我们只能像90年代的黑客一样在命令行(Mac上叫Terminal)里敲代码去调用它。这对于现代电脑用户来说有些坑。。。这就是为什么 **GitHub** 闪亮登场了。
+
+![](https://1buf0w.dm2301.livefilestore.com/y3m06mkd3TuOhn50x0BtCX2BT3BwXvU6REpyjatwzs5dcUuYKYoZNtOEKL75kZbAQYcm3i1vWPBGi19DRq-kiE21xqNoF2DP4Vs96T6Rx7hKmZSCw1nrVNnFQPEImUj4pyfn_3l1iCedCCzCTDeEPVikmZiECMs35lkMWOUkGk6ovs?width=1024&height=659&cropmode=none)
+我的 Macbook Pro 上的 Terminal 截屏 ☝️
+
+**GitHub** 在两个层面使 **Git** 变得更加易用：
+
+* 第一，如果你下载了 **[桌面版GitHub](https://desktop.github.com)**，你就拥有一个图形化的操作界面用来帮助你进行本地项目的版本控制。
+* 第二，申请一个 **GitHub** 账号，你就可以将版本控制的项目传到网上备份，同时享受社交网路的功能。
+
+你可以浏览其他 **GitHub** 用户上传的项目文件，甚至下载它们用于研究和学习。其他用户也可以浏览你公开的项目，帮你指出错误，提供技术支援。不管怎样，任何时候不会发生任何数据丢失，因为 **Git** 给每一个变更都照了"快照"。
+
+虽然不用学 **Git** 就可以使用 **GitHub**，但是**使用**和**懂行**还是有区别的。在接触 **Git** 之前我就已经会用 **GitHub**，但是我其实并不明白工作机理。下面我们就来学学怎么在命令行工具里调用 **Git**。   
 
 <span id="03"></span>
 
-## Git的黑话
+## 03. Git的黑话
+
+江湖险恶，想跟 **Git** 打交道，得先学点 **Git** 的黑话：
+
+**命令行 (Command Line)**:
+一个用来输入 **Git** 命令的电脑程序，在Mac上叫 Terminal。Mac是编程神器，系统预装了 **Git**，但是版本有些陈旧，你可以[手动更新](#upgrade)。PC机上需要下载并安装 **Git**，命令行才会执行 **Git** 的相关指令。
+
+**代码仓库 (Repository 简称 Repo)**: 一个存储你的项目的空间和目录。它可以是存储项目的本地文件夹，也可以是 **GitHub** 或者其他托管网站的存储空间。在这个空间里你可以保存代码，图片，文本文档。。。等等。
+
+**版本控制 (Version Control)**:
+这个就是 **Git** 被设计出来的目的了。如果你有一个 Microsoft Word 文档，要么你每次保存时都把老的版本覆盖掉，要么你要保存好多个文件。 有 **Git** 就不需要那样做， **Git** 会给每个变动来个"快照"(意思是它保存了单一文件的不同历史状态)。
+
+**提交并备份/快照 (Commit)**:
+这个词不知道该怎么译成中文，姑且意译了。**Commit** 功能就是 **Git** 的强大之处。当你 **Commit** 时，其实你是给你的Repo在一个时间点照了一个"快照"，就像一个随时可以回去的还原点。
+
+**分支 (Branch)**: 
+很多人怎么同时在同一个项目上修改呢? 一般而言，他们利用 **Git** 从主项目上造一个 **分支 (Branch)**，然后在自己的分支版本上修改。修改完成后，他们可以商量 **分支 (Branch)** 项目 和 **主 (Master)** 项目 的 **合并 (merge)** 事宜。
 
 <span id="04"></span>
 
-## Git特有的指令
+## 04. Git特有的指令
+
+因为 **Git** 是为了 **Linux** 这样的庞大工程而诞生的，所以它有丰富的指令。但是你只要掌握几个以 `git` 关键字开头的命令就可以把它玩转了。
+
+* `git init` ：初始化一个新的 **Git Repo**。你只有打开一个文件夹(这个文件夹就是你的本地Repo)，然后在命令行或者Terminal里敲这个命令之后才能运行其他指令。
+
+* `git config` ：设置 (configure) 的缩写，这是你第一次部署 **Git** 时最有用的指令。 
+
+* `git help` ：忘记指令咋写了? 在命令行敲这个来获取帮助。你也可以更具体些，例如输入 `git help init` 去查看 init 指令的作用和用法。
+
+* `git status` ：查看 **Repo** 的状态。查看 **Repo** 里都有什么文件，哪些变动还没被"快照"(Commit)，还有你目前在 **Repo** 的哪一个 **Branch** 工作。 
+
+* `git add` ：**注意，这个指令的意思不是把文件加到 Repo 目录下，而是让新文件进入到 Git 的关注范围**。运行完 add 指令后，**Git** 才知道要给这些文件照快照(这时 Git 还是不会自动存储变更的状态)。 
+
+* `git commit` ：这是 **Git** 最核心的指令。你在 **Repo** 里做完任何修改后，在命令行输入这条指令，用来告诉 **Git**：好了，**Repo** 里的文件变更了，给我把变更后的状态照下来。常用的还有 `git commit -m "自己写点用来记录修改内容的文字"`。引号引起来的内容是你用来记录这次修改的，例如"增加新文件"啊，"修改内容"之类的。
+
+* `git branch` ：和其他人合作，又想自己修改自己的。这个指令就可以让你创建一个新的分支，或者说新的快照时间线。你可以在最后输入新分支的名字，例如你想叫它"cats"，你就要在命令行里输入 `git branch cats`。 
+
+* `git checkout` ：顾名思义，让你检查除去你手头正在工作的分支之外的另一个分支。**这是一个导航指令**。比如 `git branch master` 切换到主项目分支，`git branch cats` 切换到 cats 分支。
+
+* `git merge` ：完成一个分支的修改后，你可以把你的修改合并到主分支，这样一来所有参与项目的开发者都能看到你修改的内容，例如 `git merge cats` 指令会把你在 cats 分支上所做的所有修改叠加到主分支上。
+
+* `git push` ：把本地修改后的commits同步到 **GitHub** 线上。 
+
+* `git pull` ：把 **GitHub** 上最新版本的 **Repo** 同步到本地以便于在此基础上进行修改。  
 
 <span id="05"></span>
 
-## Git和GitHub的初始设置
+## 05. GitHub和Git的初始设置
+
+首先，你要在 GitHub.com [注册一个账号](https://github.com)。这就像申请其他社交网站账号一样easy。记住你填的电子邮箱，后面会用到。
+
+如果你注册完后什么都不做，**GitHub** 也能正常运作。但是如果你想在电脑**本地**工作，你就得[安装**Git**](https://git-scm.com) 了。
+
+<span id="upgrade"></span>
+
+> 这里再强调一下，如果你是 Mac 机，系统预装的 Git 版本可能有些陈旧。你可以在 Terminal 里输入 `git --version` 来检查 Git 的版本。写这篇博文时 Git 版本号已经更新到 2.9.3了，你可以直接在 [Git官网]((https://git-scm.com)) 下载最新版本安装。
+
+安装完成后打开 Terminal，向 **Git** 介绍一下自己吧，输入以下命令：
+
+	git config --global user.name "你的名字"
+
+引号内输入你自己的名字，可以是真名，网名等，作为你的 **Git** 用户名。
+
+然后，告诉 **Git** 你的 email。**这里要确保和申请 GitHub 账户时用一样的 email**：
+
+	git config --global user.email "你的电子邮箱"
+
+大功告成。(但是如果你想设置 **Git** 让它不要每次都让你登录你的 **GitHub** 账号，你可以在[这里](https://help.github.com/articles/set-up-git/)找到更详尽的操作步骤。)
 
 <span id="06"></span>
 
-## 获取线上Repo
+## 06. 创建线上Repo
+
+现在你已经全部部署好了，是时候为你的第一个项目创建一个 **Repo** 了 - 一个保存所有项目文件和所有版本状态快照的目录或者空间。
+
+在 GitHub.com 上登录你的账户，右上角你的头像左边的加号上点一下，选择 "New Repository"，然后你会看到如下界面：
+
+![](https://1ruf0w.dm2301.livefilestore.com/y3mZKJJgyOAXLPK2lVQeChS568m2xqTBkpAUq__Nm6qYZwG6fp5ibqcD8KQo9LkstNb5OZ9kozlIU44ctqeZhCOtVGlizGhrypxn0l9pWnqyg0YaYnU8ItMjTzL9w0OzOyZ9v2IGd6VDFbTz0_K2E2O-TyuG7oQUJZ_lIT99Ueb718?width=1024&height=731&cropmode=none)
+
+给你的 **Repo** 一个简短易记的名字(好像不支持中文)，然后勾选 Public 开放访问权限，让别人笑去吧，学习 **GitHub** 有什么好藏着掖着哒?
+
+勾选或者不勾选 "Initialize this repository with a README" 看你心情。README 文件其实就是你的项目描述文件。
+
+最后猛戳那个绿油油的巨大按钮。你的线上项目 **Repo** 就这么创建好啦!   
 
 <span id="07"></span>
 
-## 创建本地Repo
+## 07. 创建本地Repo
+
+我们刚刚为你的项目在网上建立了一个存储仓库，但是你不用在线上工作。你的大部分工作将在本地完成。所以我们要将这个线上 **Repo** 映射到一个本地的文件目录。
+
+这部分涉及的命令行代码比较多，所以我经常在读其他教程贴关于这部分的内容时被搞得蒙圈。所以我们一步一步慢慢来。
+
+首先在 Terminal 输入：
+
+	mkdir ~/MyProject
+
+`mkdir` 是 "make directory" (创建的文件目录) 的简写。她不是一个	**Git**	特有的命令，它是一条在我们能看到电脑图形界面之前就可以运行的导航指令。`~/` 的意思是电脑里用户文件夹的根目录，比如我的用户文件夹叫theowu，那么 `~/` 就指代的是theowu文件目录。如果你还是不明白，你可以在**文件浏览器**的**地址栏**输入 `~/` 看看它在你的电脑里具体在哪里 (**注意**，是**文件浏览器**，不是**网页浏览器**。PC上的文件浏览器很简单，随便打开一个文件夹的界面就可以了)。如果我没记错的话，Mac 用户要在 Finder 菜单栏选择 Go to 然后 Go to folder，然后输入 `~/`。其实你也可以在**网页浏览器**的**地址栏**里输入 `~/` 来查看目录具体在哪，目录下都有什么文件，只是在 Mac 上 Safari 浏览器似乎有些问题，你换成 Chrome 试试。
+
+另外，注意我创建的文件目录名字叫 MyProject，和前面在 **GitHub** 上创建的 **Repo** 的名称一致。你也要养成好习惯，两次使用相同的名称。
+
+现在终于可以用一个 **Git** 命令了，在命令行下一行键入：
+
+	git init
+
+**Git** 命令全都是以 **Git** 关键字开头的，用以和其他命令区分。`init` 的意思是 "initialize" (初始化)，它告诉电脑把当前所在文件目录视为 **Git** 的本地 **Repo**。
+
+以上命令执行完后你的电脑就意识到该文件目录已经部署好 **Git** 了，你就可以下达其他 **Git** 相关的指令了。现在你在线上和线下都有用来存储项目文件的 **Repo** 了。下面宝宝就来学着给本地和 **GitHub** 上的  **Repo** 进行第一次 **Commit**。更多优质的 **GitHub** 学习资源在向你招手👏。
+
+<span id="part02"></span>
+
+# 第二部分
+
+如果你成功的搞定了上面的步骤，恭喜你👊，我看你定是骨骼惊奇🤔，将来必成一代棕狮🦁! 我们现在就往项目目录里塞点东西，然后弱弱地  **Commit** 一下😏。对了忘记说了，前面创建了 MyProject 目录，但是没有进入该目录，为保证在该目录下操作，再在命令行输入 `cd ~/MyProject`。`cd` 是进入的意思。现在确保你的命令行大概是这个样子：
+
+![](https://zhuf0w.dm2301.livefilestore.com/y3mqAsbN8EzURSDRaKuEDASY6iUUnCXhaT7gcZeVVTV_H78vCDra2bKnp99KRpcBtsOErZvJcXlLfHJPGfRau2ldwSHCccu3j6HI3MByPYKN8Bgiq0vrb30CLeS_K9xUbuK2D2OCZOnAo7lfQJDn8Nth1yQHM4Ws8r5OJn6OM_AcdA?width=1024&height=423&cropmode=none)
+
+下一行输入：
+
+	touch Readme.txt
+
+这不是一个 **Git** 特有的命令，这是另一个标准导航指令。`touch` 的其实是 "create" 即创建的意思，后面跟的是你要创建的东西的名字。如果运行完该指令后你用文件浏览器或者 Finder 浏览到 MyProject 目录下你会发现里面多了一个空的 Readme.txt 文件。如果你调皮又贪玩，你也可以创建 Readme.doc 或者 Kiwi.gif 等等。
+
+你能清晰地看见新增的 Readme.txt 文件， **Git** 可不一定。让我们测试一下。下一行输入：
+
+	git status
+
+然后你大概会得到这样的回复：
+
+![](https://zxuf0w.dm2301.livefilestore.com/y3mD8_ZbY0gURaagX0E3pgxA8DLNlTaNemaqYJ7ovhrlIZLmXmyJ9LnUEOw-fHngs7cIUUUXo9TONErdUg7KTJ1KNGinMwLdpQ4xHrtyvArcqvYKomafdGsKYIrnfeyrVsp9UNsmnOAAUFIxK3UXbtg7Dk5VGpURGsVEd4Ljejb9eM?width=1024&height=530&cropmode=none)
+
+	On branch master
+
+	Initial commit
+
+	Untracked files:
+  		(use "git add <file>..." to include in what will be committed)
+
+		Readme.txt
+
+神马情况?!<br>
+首先，第一句是说，你现在处于主分支(master branch)，显然你在主分支，因为你从来没创建过其他分支，而且你是一个人在工作，也没有别人创建其他分支。<br>
+其次，Readme.txt 文件被列为 "untracked file"，英语不好的童鞋蛋疼了，其实是**未被追踪的文件**的意思，也就是说 **Git** 忽略的文件。要让 **Git** 关注这个文件的变动，在命令行键入：
+
+    git add Readme.txt
+
+好啦，现在 **Git** 知道要时刻关注这个文件是否变动了。是时候给整个工程项目来张美照了，或者说小小的 **Commit** 一下，在命令行键入：
+
+	git commit -m "Add Readme.txt"
+
+![](https://0buf0w.dm2301.livefilestore.com/y3mAGxlYo6WP615wNmcOAp1gSKKFEAwakb4b9UID7EVDLbMgLSY076VKq4SuCmBPdegGd88NthrJmvfMUJ5VryiPTOpdvToqnntqfOL8Nbfh_qtRxKpb1VM--tTy3-14owWQch0EkQ_SKJ8DWEtXfapSe8ApalCAxSG-GX_165UBpA?width=1024&height=530&cropmode=none)
+
+`-m` 意思是 message (消息)，什么消息呢，就是刚才项目文件变动的描述。注意描述是用现代时写的，不是过去时，因为你可能随时想回滚文件版本，所以养成好习惯，用现在时描述一个 **Commit**。
+
+刚才我们在本地做出了一些变动，是时候把我们的第一个 **Commit** 也同步到你的 **GitHub** 上了。
+
+等等，你可能会想，我们还没有把线上 **Repo** 和本地 **Repo** 联通起来呢。Bingo! 的确如此，那么下面我们就来建立这样一个联接。
 
 <span id="08"></span>
 
-## 从本地Repo到GitHub线上Repo
+## 08. 联通本地Repo和GitHub线上Repo
+
+同时拥有本地和远程 **Repo** 是美妙的🎊🎉。**你可以在本地一心一意地敲敲打打修修补补，不用管朋友圈里的炫耀谎言谣言或者其他怪相或者烂事**，等你完工后只要退送到 **GitHub** 就可以骄傲滴让你的小伙伴们看到你都捣鼓了啥子出来😋。
+
+这样做也方便多个小伙伴在同一个项目上贡献自己的力量。小伙伴们可以在自己的电脑上各行其事，完工后把自己的成果推送到 **GitHub** 上。So，小伙伴们，让我们开黑吧!
+
+首先，我们得告诉 **Git** 在线上某处存在这样一个远程 **Repo**。
+
+假设我们在 **GitHub** 上有一个叫 "MyProject" 的 **Repo**，位于 http://github.com/`用户名`/`项目名`.git。当然啦，`用户名` 得换成你的 **GitHub** 用户名，`项目名` 得换成你给你第一个 **GitHub Repo** 起的名字。实际上，你可以登录你的 **GitHub** 主页，在项目子页面里找到该项目的网络地址。
+
+一切就绪后在命令行键入：
+
+	git remote add origin http://github.com/用户名/项目名.git
+
+翻译过来就是：**git 远程 添加 源 http://github.com/`用户名`/`项目名`.git**。不用Theo解释，聪明如你应该会懂吧。
+
+**Git** 现在知道这个线上 **Repo** 的存在了，那就是你本地做出的修改要同步过去的地方。命令行键入以下命令确认一下：
+
+	git remote -v
+
+![](https://0ruf0w.dm2301.livefilestore.com/y3mnw9GrgiX3_B0-sYXiYtGYj7v5M43Fy5ACvBoxYRHOD5M9wQv0vZW767QUqS62oiPQfQ-BvjrnRdQK8OEmnwBWMxTon3TnyUwAa9zqrVKxk2_ITFeXTP-aBnULLoEQLeUOwV90DSHDfi6eo3XhvVk67Aye-4bBavJ4rsQXvLPtoA?width=1024&height=530&cropmode=none)
+
+运行完命令后，控制台给你返回了一个列表，里面包含的是你的本地 **Repo** 所识别的所有远程源。如果你前面一直跟着我的教程做的，那么这里应该只有一个源。这个源被列举了两次，第一次意思是说你可以从这个源上 **fetch (抓取)** 信息，第二条意思是说你可以向这个源 **push (推送)** 信息。
+
+现在我们想做的就是上传或者说 **push (推送)** 本地文件的变动到 **GitHub** 的远程 **Repo**。那么简单了，在命令行键入：
+
+	git push origin master
+
+![](https://2huf0w.dm2301.livefilestore.com/y3mJATP_AqCvb6xpATxYhOCVs-tSHamZYU5KNu06bVSn29VrudtTtNvQ1tGGOYQS2xnNai_8hoBbht6e95YFcA8Uuh56LL3R7BtxxNIYEwy8-D1jpKjq8MisXNXWIgoOzGxva4yVKekxTwntmz6VaSVXnK0zrEBD08Cd8ZPFC-7Slo?width=1024&height=241&cropmode=none)
+
+这句命令的意思把所有变动以及快照统统 **push (推送)** 到刚才设定的那个源的主分支。登录你的 **GitHub**，你会看到 **GitHub** 已经在记录你今天的 **Commit** 次数了。如果你进到项目目录下，你会发现多了一个和本地项目目录下一模一样 Readme.txt 文件。
 
 <span id="09"></span>
 
-## 汇总时间到!
+## 09. 汇总时间到!
+
+恭喜你! 🎉🎊 你现在已经正式从小白晋升成一个把 **Git** 舞得虎虎生风的叫兽了。你现在会创建 **Repo** 了，也会 **Commit** 了。网上的很多教程到这里就要结束了。
+
+但是你也许会觉得："我读书少，表骗我😒"，或者内心有一万只**草泥马**在奔腾。你确定这样就可以自己动手丰衣足食了吗，至少我是不行的。
+
+<figure>
+    <img src="https://2xuf0w.dm2301.livefilestore.com/y3pdhgorMi2PJRiD7nZDiR4EctAqOMofpvPCZZrpRcfIvRaGkEkWEHVt-Y2lb5LIoJAQkPUVHSpi9WfpEgn-qT-hs2VK_kOLIyv7SsXD7aaeK-CzOBXYSRhtQ6kl6H7wO0x5jHeNqzxGOYgjheE1wIFaw/alpaca.gif" width="240" height="145">
+    <img src="https://0htiow.dm2301.livefilestore.com/y3mJkndXMKaPgnk4BeTT_G8RPFC4tZeiP9dPtkkATgIhvVpW77LcKWgqC4Gl6sq-GLV5ccgVcgSIfk8ztDBnRrG7yt3rlXh88E50zYCDh_h0kUFL-jxNSbtGDI2t9jdeLY0Xr202vIqi66obBAsZW3Mb2GpkdUZu4gp-9ZuGvBuQCg?width=500&height=273&cropmode=none" width="240" height="145">
+    <img src="https://0xtiow.dm2301.livefilestore.com/y3mD0RoZ63KZLeAWvdw7V67AcIriIZ20rpM9M2V1Wo-qkxXXZJUeJzIrc4wXkUvwQBMpSOYedR-8jRJx7sw8ed3WQMG7B5KXXTC8bc-QnXOhkkwrVeZbistk8Yo8_O1uS4nycyzkPio6vX24HLF8qJSnzFJzSx9CeFzMLnKP8sRHCc?width=640&height=386&cropmode=none" width="240" height="145">
+</figure>
+
+图片来源：[@今日头条-爱她就给她一场草泥马婚礼](http://toutiao.com/i6230911066537198081/)
+
+为了真正的玩转 **Git**，让我们用所学的所有技巧来模拟一次完整的 **Git** 工作流程。
+
+假设你现在是某鹅厂的网页设计师，你正在和团队里其他一些小伙伴们一起开发一个新的鹅厂子站叫草泥马网。
+
+当你的上级告诉你该网站的初代设计太low了你将参加重新设计草泥马网的网页时，你觉得作为一个没有程序猿🙈背景的UX设计狮🦁马上要开始装B了真特么是既紧张又鸡冻🐔。但是你的Boss向你保证说谁都能快速学会用 **Git**。
+
+于是你上网找了一些图片资源，大刀阔斧地PS成了一系列滑稽又可笑的网站吉祥物的图片😂，你把这些图片保存在了本地一个叫alpaca的文件夹里。现在你得把它加入到项目文件目录里了。
+
+打开 Terminal，更改文件目录直到你进入到这个alpaca文件夹里面，因为你的图片都存在那里。比如这样：
+
+	cd ~/alpaca
+
+然后初始化 **Git** 以便能在该文件目录下使用 **Git** 命令。在命令行键入：
+
+	git init
+
+现在这个文件夹已经是一个 **Git Repo** 了。检查一下你是否确实处于存储你的图片的那个文件夹，命令行键入：
+
+	git status
+
+为了模拟真实情景，Theo早前在alpaca文件夹里丢了三个文件：`一群草泥马.jpeg`，`草泥马.jpeg`，和 `蓝色草泥马.jpeg`，所以 **Git** 给我的回复是这样的：
+
+	On branch master
+
+	Initial commit
+
+	Untracked files:
+  		(use "git add <file>..." to include in what will be committed)
+
+			一群草泥马.jpeg
+			草泥马.jpeg
+			蓝色草泥马.jpeg
+
+发现了没，你P的图全在那里了(假设这三个文件是你的P图成果😂)。接下来用 add 命令告诉 **Git** 去关注它们，键入命令：
+
+	git add 草泥马.jpeg
+
+然后用 commit 命令给你的 **Repo** 照张"快照"并注解一下：
+
+	git commit -m "Add 草泥马.jpeg"
+
+现在你的控制台应该是类似这样子了👇：
+
+![](https://1btiow.dm2301.livefilestore.com/y3mQAW93Klu6q1qUWhrPEyPM5sj8D61MFpQW5fLGnwOk09dAeVuJgy_f8M1oM8U6OWzTEVK-VW2Y1kzrgqihI0sEfYg2Ms_1KiezyG91xiSfk7w_VPoLZCL6bHQMl9_SXtt-u_co6yD3eHxY9OtVIo6_8-33tEJAC5YGHy5RwVuTEg?width=1024&height=659&cropmode=none)
+
+其实一个一个 add 太麻烦，你也可以用一个 \* 通配符一次性把目录下所有文件添加到 **Git** 的关注范围内：
+
+	git add *
+
+养成好习惯，每次 add 之后都要 commit 并注解：
+
+	git commit -m "Add all files"
+
+太棒啦! 但是团队里的其他小伙伴在各自的 **Repo** 埋头苦干根本看不到你的杰作，因为主项目文件都托管在你们公司的 **GitHub** 账户 (用户名: gooseWebDesign) 上名叫 "alpaca"的 **Repo** 里。
+
+你还没有连接到这个 **GitHub Repo**，所以电脑连它是什么鬼都不知道，告诉你的本地 **Repo** 这个线上 **Repo** 的存在吧：
+
+	git remote add origin https://github.com/gooseWebDesign/alpaca.git
+
+保险起见，再用以下命令检查一下：
+
+	git remote -v
+
+最后，期待已久的时刻终于来临了。把你P出来的滑稽又可笑的网站吉祥物图片连同刚才做过的commit一起全部推送到公司的工程项目里吧：
+
+	git push
+
+嗒啦! 🎉🎊 有这些便捷的功能，**Git** 和 **GitHub** 显然不仅仅是程(zhòng)序(yīn)猿(zài)们(zhè)的屠龙宝刀。
 
 <span id="10"></span>
 
-## Git学习资源
-
-
-
-#### 无选择性疲劳
-
-Angular 是一个完整的框架，本身就提供了比 React 多得多的建议和功能。而要用 React，开发者通常还需要借助别的类库来打造一个真正的应用。比如你可能需要额外的库来处理路由、强制单向数据流、进行 API 调用、做测试以及管理依赖等等。要做的选择和决定太多了，让人很有压力。这也是为什么 React 有那么多的入门套件的原因（我自己就写了两个：[1](https://github.com/coryhouse/react-flux-starter-kit)、[2](https://github.com/coryhouse/react-slingshot)）。
-
-Angular 自带了不少主张，所以能够帮助你更快开始，不至于因为要做很多决定而无所适从。这种强制的一致性也能帮助新人更快适应其开发模式，并使得开发者在不同团队间切换更具可行性。
-
-Angular 核心团队让我非常欣赏的一点是，他们拥抱了 TypeScript，这就造成了另一个优势。
-
-<span id="4"></span>
-
-#### TypeScript = 阳关大道
-
-没错，并非所有人都喜欢 TypeScript，但是 Angular 2 毅然决然地选择了它确实是个巨大的优势。反观 React，网上的各种示例应用令人沮丧地不一致——ES5 和 ES6 的项目基本上各占一半，而且目前存在[三种不同的组件声明方式](http://jamesknelson.com/should-i-use-react-createclass-es6-classes-or-stateless-functional-components/)。这无疑给初学者造成了困惑。（Angular 还拥抱了装饰器（decorator）而不是继承（extends）——很多人认为这也是个加分项）。
-
-尽管 Angular 2 并不强制使用 TypeScript，但显然的是，Angular 的核心团队默认在文档中使用 TypeScript。这意味着相关的示例应用和开源项目更有可能保持一致性。Angular 已经提供了[非常清晰的关于如何使用 TypeScript 编译器的例子](https://angular.io/docs/ts/latest/quickstart.html)。（诚然，目前[并非所有人都在拥抱 TypeScript](http://angularjs.blogspot.com/2015/09/angular-2-survey-results.html)，但我有理由相信等到正式发布之后，TypeScript 会成为事实上的标准）。这种一致性应该会帮助初学者避免在学习 React 时遇到的疑惑和选择困难。
-
-#### 极少的代码变动
-
-2015 年是 [JavaScript 疲劳](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4#.559iqxb39)元年，React 可以说是罪魁祸首。而且 React 尚未发布 1.0，所以未来还可能有很多变数。React 生态圈依旧在快速地变动着，尤其是[各种 Flux 变种](https://github.com/kriasoft/react-starter-kit/issues/22)和[路由](https://github.com/rackt/react-router)。也就是说，你今天用 React 写的所有东西，都有可能在 React 1.0 正式发布后过时，或者必须进行大量的改动。
-
-相反，Angular 2 是一个对已经成熟完整框架（Angular 1）的重新发明，而且经过仔细、系统的设计。所以 Angular 不大可能在正式发布后要求已有项目进行痛苦的代码变动。Angular 作为一个完整的框架，你在选择它的时候，也会信任其开发团队，相信他们会认真决定框架的未来。而使用 React，一切都需要你自己负责，你要自己整合一大堆开源类库来打造一个完整的应用，类库之间互不相干且变动频繁。这是一个令人沮丧的耗时工作，而且永远没有尽头。
-
-#### **广泛的工具支持**
-
-后面我会说，我认为 React 的 JSX 是非常耀眼的亮点。然而要使用 JSX，你需要选择支持它的工具。尽管 React 已经足够流行，工具支持不再是什么问题，但诸如 IDE 和 lint 工具等新工具还不大可能很快得到支持。Angular 2 的模版是保存在一个字符串或独立的 HTML 文件中的，所以不要求特殊的工具支持（不过似乎 Angular 字符串模版的智能解析工具已经呼之欲出了）。
-
-#### Web Components 友好
-
-Angular 2 还拥抱了 Web Component 标准。唉，真尴尬我居然一开始忘记提到这点了——最近我还发布了一门关于[Web Components 课程](https://www.pluralsight.com/courses/web-components-shadow-dom)呢！简单来说，把 Angular 2 组件转换成原生 Web Components 应该会比 React 组件容易得多。固然 Web Components 的[浏览器支持度依然很弱](http://jonrimmer.github.io/are-we-componentized-yet/)，但长期来看，对 Web Components 友好是很大的优势。
-
-Angular 的实现有其自身的局限和陷阱，这正好让我过渡到对 React 优势的讨论。
-
-### React 的优点
-
-现在，让我们看看是什么让 React 如此与众不同。
-
-#### **JSX**
-
-JSX 是一种类似 HTML 的语法，但它实际上会被编译成 JavaScript。将标签与代码混写在同一个文件中意味着输入一个组件的函数或者变量时你将享受到自动补全的福利。而 Angular 基于字符串的模版就相形见绌了：很多编辑器都不会高亮它们（只会显示单色）、只有有限的代码补全支持，并且一直到运行时才会报错。并且，通常你也只能得到很有限的错误提示。不过，Angular 的团队[造了一个自己的 HTML 解析器来解决这个问题](https://github.com/angular/angular/issues/4417)。（叼叼叼！）
-
-如果你不喜欢 Angular 的字符串模版，你可以把模版移到一个单独的文件里去。不过这样你就回到了我认为的“老样子”：你需要在自己脑袋里记住这两个文件的关联，不但没有代码自动补全，也没有任何编译时检查来协助你。这听起来可能并不算什么……除非你已经爱上了与 React 相伴的日子。在同一个文件中组合组件还能享受编译时的检查，大概是 JSX 最与众不同的地方之一了。
-
-
-![](http://p5.qhimg.com/d/inn/8a99f370/2.jpg)
-
-对比 Angular 2 与 React 在标签忘记闭合时是如何表现的。
-
-关于为什么 JSX 是一个巨大的优势，可以看看 [JSX：硬币的另一面（JSX: The Other Side of the Coin）](https://medium.com/@housecor/react-s-jsx-the-other-side-of-the-coin-2ace7ab62b98#.5007n49wq). （P.S. 这是作者写的另一篇文章，如果大家希望我们可以把这篇也翻了，欢迎在评论区举手）
-
-#### React 报错清晰快速
-
-当你在 React 的 JSX 中不小心手抖打错时，它并不会被编译。这是一件非常美妙的事情：无论你是忘记闭合了标签还是引用了一个不存在的属性（property），你都可以立刻知道到底是哪一行出错了。**JSX 编译器会指出你手抖的具体行号**，彻彻底底加速你的开发。
-
-相反，当你在 Angular 2 中不小心敲错了一个变量时，鸦雀无声。**Angular 2 并不会在编译时做什么，它会等到运行时才静默报错。**它报错得*如此之慢*，我加载完整个应用然后奇怪为什么我的数据没有显示出来呢？这太不爽了。
-
-#### React 以 JavaScript 为中心
-
-终于来了。这才是 React 和 Angular 的根本区别。**很不幸，Angular 2 仍然是以 HTML 而非 JavaScript 为中心的。**Angular 2 并没有解决它设计上的根本问题：
-
-> Angular 2 继续把 “JS” 放到 HTML 里。React 则把 “HTML” 放到 JS 里。
-
-这种分歧带来的影响真是再怎么强调也不为过。它们从根本上影响着开发体验。Angular 以 HTML 为中心的设计留下了巨大的缺陷。正如我在 [JSX：硬币的另一面](https://medium.com/@housecor/react-s-jsx-the-other-side-of-the-coin-2ace7ab62b98#.jqh5kkxlk) 中所说的，JavaScript 远比 HTML 要强大。因此，**增强 JavaScript 让其支持标签要比增强 HTML 让其支持逻辑要合理得多**。无论如何，HTML 与 JavaScript 都需要某种方式以粘合在一起。React 以 JavaScript 为中心的思路从根本上优于 Angular、Ember、Knockout 这些以 HTML 为中心的思路。
-
-让我们来看看为什么。
-
-#### React 以 JavaScript 为中心的设计 = 简约
-
-Angular 2 延续了 Angular 1 试图让 HTML 更加强大的老路子。所以即使是像循环或者条件判断这样的简单任务你也不得不使用 Angular 2 的独特语法来完成。例如，Angular 2 通过两种语法同时提供了单向数据绑定与双向数据绑定，可不幸的是它们实在差得有点多：
-
-{% raw %}
-
-```hbs
-{{myVar}}        //单向数据绑定
-ngModel="myVar"  //双向数据绑定
-```
-
-{% endraw %}
-
-在 React 中，数据绑定语法不取决于数据流的单双向（数据绑定的单双向是在其他地方处理的，不得不说我觉得理应如此）。不管是单向还是双向数据流，绑定语法都是这样的：
-
-```js
-{myVar}
-```
-
-Angular 2 的内联母版（inline master templates）使用了这样的语法：
-
-{% raw %}
-```hbs
-<ul>
-  <li *ngFor="#hero of heroes">
-    {{hero.name}}
-  </li>
-</ul>
-```
-{% endraw %}
-
-上面这个代码片段遍历了一组 hero，而我比较关心的几点是：
-
-- 通过星号来声明一个“母版”实在是太晦涩了
-- `hero` 前的英镑符号（`#`）用于声明一个局部模版变量。这个概念感觉非常鸡肋（如果你偏好不使用 `#`，你也可以使用 `var-` 前缀写法）
--  为 HTML 加入了循环语义的HTML 特性（attribute）`ngFor` 是 Angular 特有的东西
-
-相比上面 Angular 2 的语法，React 的语法可是纯净的 JavaScript （不过我得承认下面的属性 `key` 是个 React 的私货）
-
-```hbs
-<ul>
-  { heroes.map(hero =>
-    <li key={hero.id}>{hero.name}</li>
-  )}
-</ul>
-```
-
-鉴于 JS 原生支持循环，React JSX 利用 JS 的力量来做到这类事情简直易如反掌，配合 `map`、`filter` 能做的还远不止此。
-
-去看看 [Angular 2 速查表](https://angular.io/docs/ts/latest/guide/cheatsheet.html)？那不是 HTML，也不是 JavaScript……这叫 **Angular**。
-
-> **读懂 Angular：** 学一大堆 Angular 特有的语法
->
-> 读懂 React： 学 JavaScript
-
-React 因为语法和概念的简约而与众不同。我们不妨品味下当今流行的 JS 框架/库都是如何实现遍历的：
-
-```
-Ember     : {{# each}}
-Angular 1 : ng-repeat
-Angular 2 : ngFor
-Knockout  : data-bind="foreach"
-React     : 直接用 JS 就好啦 :)
-```
-
-除了 React，所有其它框架都用自己的专有语法重新发明了一个我们在 JavaScript 常见得不能再常见的东西：**循环**。这大概就是 React 的美妙之处，利用 JavaScript 的力量来处理标签，而不是什么奇怪的新语法。
-
-Angular 2 中的奇怪语法还有点击事件的绑定：
-
-```javascript
-(click)="onSelect(hero)"
-```
-
-相反，React 再一次使用了普通的 JavaScript：
-
-```javascript
-onClick={this.onSelect.bind(this, hero)}
-```
-
-并且，鉴于 React 内建了一个模拟的事件机制（Angular 2 也有），你并不需要去担心使用内联语法声明事件处理器所暗含的性能问题。
-
-为什么要强迫自己满脑子都是一个框架的特殊语法呢？为什么不直接拥抱 JS 的力量？
-
-#### 奢华的开发体验
-
-JSX 具备的代码自动补全、编译时检查与丰富的错误提示已经创造了非常棒的开发体验，既为我们减少了输入，与节约了时间。而配合上热替换（hot reloading）与时间旅行（time travel），你将获得前所未有的开发体验，效率高到飞起。
-
-原文这里链了个 Youtube 上的视频：[Dan Abramov - Live React: Hot Reloading with Time Travel at react-europe 2015](https://www.youtube.com/watch?v=xsSnOQynTHs&feature=youtu.be)，大家自备梯子。
-
-#### 担心框架的大小？
-
-这里是一些常见框架/库压缩后的大小（[来源](https://gist.github.com/Restuta/cda69e50a853aa64912d)）：
-
-- **Angular 2:** 566k (766k with RxJS)
-- **Ember:** 435k
-- [**Angular 1**](https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js)**:** 143k
-- **React + Redux:** 139k
-
-列出的都是框架级的、用于浏览器且压缩后的大小（但并未 gzip）。需要补充的是，Angular 2 的尺寸在最终版本发布时应该会有所减小。
-
-为了做一个更真实的对比，我将 Angular 2 [官方教程](https://angular.io/docs/ts/latest/tutorial/)中的 Tour of Heroes 应用用 Angular 2 和 React（还用上了新的 [React Slingshot](https://github.com/coryhouse/react-slingshot) 入门套件）都实现了一遍，结果如何呢？
-
-
-- [**Angular 2**](https://github.com/coryhouse/angular-2-tour-of-heroes/tree/master)**:** 764k 压缩后
-- [**React + Redux**](https://github.com/coryhouse/react-tour-of-heroes)**:** 151k 压缩后
-
-可以看到，**做一个差不多的东西，Angular 2 目前的尺寸是 React + Redux 的五倍还多**。重要的事情再说一遍，Angular 2 的最终版本应该会减重。
-
-不过，我承认关于框架大小的担忧可能被夸大了：
-
-> 大型应用往往至少有几百 KB 的代码，经常还更多，不管它们是不是使用了框架。开发者需要做很多的抽象来构建一个复杂的软件。无论这些抽象是来自框架的还是自己手写的，它都会对应用的加载性能造成负面影响。  
->
->  就算你完全杜绝框架的使用，许多应用仍然是几百 KB 的 JavaScript 在那。 — Tom Dale [JavaScript Frameworks and Mobile Performance](http://tomdale.net/2015/11/javascript-frameworks-and-mobile-performance/)
-
-Tom 的观点是对的。像 Angular、Ember 这样的框架之所以更大是因为它们自带了更多的功能。
-
-但是，我关心的点在于：很多应用其实用不到这种大型框架提供的所有功能。在这个越来越拥抱微服务、微应用、[单一职责模块（single-responsibility packages）](http://www.npmjs.com)的时代，**React 通过让你自己挑选必要模块，让你的应用大小真正做到量身定做**。在这个有着 200,000 个 npm 模块的世界里，这点非常强大。
-
-#### React 信奉[Unix 哲学](https://en.wikipedia.org/wiki/Unix_philosophy).
-
-React 是一个类库。它的哲学与 Angular、Ember 这些大而全的框架恰恰相反。你可以根据场景挑选各种时髦的类库，搭配出你的最佳组合。JavaScript 世界在飞速发展，React 允许你不断用更好的类库去迭代你应用中的每个小部分，而不是傻等着你选择的框架自己升级。
-
-Unix 久经沙场屹立不倒，原因就是：
-
-> 小而美、可组合、目的单一，这种哲学永远不会过时。
-
-React 作为一个专注、可组合并且目的单一的工具，已经被[全世界的各大网站们](https://github.com/facebook/react/wiki/Sites-Using-React)使用，预示着它的前途光明（当然，Angular 也被用于[许多大牌网站](https://www.madewithangular.com/#/)）。
-
-## Hello world
-
-Angular 2 相比第一代有着长足的进步。新的组件模型比第一代的指令（directives）易学许多；新增了对于同构／服务器端渲染的支持；使用虚拟 DOM 提供了 3-10 倍的性能提升。这些改进使得 Angular 2 与 React 旗鼓相当。不可否认，它功能齐全、观点鲜明，能够显著减少 “JavaScript 疲劳” 。
-
-不过，Angular 2 的大小和语法都让我望而却步。Angular 致力的 HTML 中心设计比 React 的 JavaScript 中心模型要复杂太多。在 React 中，你并不需要学习 `ng-什么什么` 这种框架特有的 HTML 补丁（shim），你只要写 JavaScript 就好了。这才是我相信的未来。
+## 10. Git学习资源
+
+我知道，**Git** 是块难啃的骨头。我已经尽力把教程写的让我这种天然呆都能看懂，但我知道每个人有每个人的学习方式。还是没能搞明白的童鞋，以下是其他一些学习 **Git** 和 **GitHub** 的资源：
+
+| 标题        	    | 注解          	|
+| ----------------- | ------------- |
+| [Is Git the Same Thing as Github!?](https://jahya.net/blog/git-vs-github/) | 这篇文章很好的解释了 **Git** 和 **GitHub** 的区别。 |
+| [多用Git少交税](http://1ke.co/course/342) | 一篇用包包子打比方解释 **Git** 运作机理的博文。 |
+| [Pro Git](https://git-scm.com/book/en/v2) | 一整本详尽开源的 **Git** 学习用书， **Git** 官方推荐。 |
+| [Try Git](https://www.codeschool.com/courses/try-git) | **CodeSchool** 和 **GitHub** 联合制作了这个快速入门教程。如果你想多学点操作基础，这个教程会很有帮助。如果你很壕，你可以在 **CodeSchool** 上撒点银子，你将学会所有关于 **Git** 的知识。 |
+| [GitHub Guides](https://www.youtube.com/c/githubguides) | 如果你喜欢看视频学习，你可以去逛逛这个 **GitHub** 的官方油管频道。 |
+| [Git Reference](http://gitref.org) | 学会了基础但是老是忘记指令怎么写? 来看看这个字典式参考站点。 |
+| [Git – the simple guide](http://rogerdudler.github.io/git-guide/) | 一个机智简短的教程，但是对于小白而言会不会节奏过快了。如果你想快速复习一遍，这篇教程是不错的选择。 |
+
+<span id="copyright"></span>
 
 ### 著作权声明
 
