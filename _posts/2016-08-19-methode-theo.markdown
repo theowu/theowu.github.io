@@ -4,7 +4,7 @@ title:      "Theo 的法语听写秘籍"
 subtitle:   "天下武功，唯快不破"
 date:       2016-08-19 16:38:00
 author:     "Theo"
-header-img: "img/2016-08-19-methode-theo.jpg"
+header-img: "img/post-bg/2016-08-19-methode-theo.jpg"
 catalog: true
 tags:
     - 生活
