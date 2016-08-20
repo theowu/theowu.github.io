@@ -7,8 +7,9 @@ header-img: "img/about-bg.jpg"
 
 <!-- Language Selector -->
 <select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-    <option value="0" selected> 中文 Chinese </option>
+    <option value="0"> 中文 Chinese </option>
     <option value="1"> 英文 English </option>
+    <option value="2" selected> 法语 French </option>
 </select>
 
 <!-- Chinese Version -->
@@ -22,13 +23,13 @@ header-img: "img/about-bg.jpg"
 
     <p>一些作品和开源项目，👉 戳 <a href="https://github.com/theowu" target="_blank">Github</a>；除了在博客写点东西外，我仍然在不断提高自己的法语水平。</p>
 
-    <!-- use align="center" or style="text-align:center;" to center images -->
+    <!-- Theo comments: use align="center" or style="text-align:center;" to center images -->
     <figure align="center">
         <img src="https://1rtiow.dm2301.livefilestore.com/y3mXgdlyjQs98Wvjxqtk_EkNGnxnkj8yVqlQKmhBlpvkGqF-ebZGWJ_fsXBLqrGB4N5-DjPIld5HGdQbyuRK77pAAeiLR2T2vtko40CbIqcw8nxVbh8eFtGU_-Hmv3pXGPZKcTSKx8vVxFcshMxkzKK11YM9iJn3JCOqg1u6zQDz6Y?width=600&height=600&cropmode=none" alt="theo-self-presentation" width="200" height="200" style="display:inline; border-radius:10px;">
         <img src="https://zhtiow.dm2301.livefilestore.com/y3mEvZQ5ue5pNCzWFCrUdJ5kUZMFVMBlTY7HUoRElhMP9SeidG1KSFFPbWjqXb8ss7YbnrPY5lHxsfww7ROZpY5wSE-fogCA5euaTiz_Wiy7gxnbwFk-17zC7pD42JJ0wnkOP87pH0PD-qJhvTRbZRrEcHgVu-nQAg9bK4wpb-0jHE?width=600&height=600&cropmode=none" alt="theo-wechat-QR-code" width="200" height="200" style="display:inline; border-radius:10px;">
     </figure>
 
-<!--     <h5>Talks</h5>
+    <!--     <h5>Talks</h5>
 
     <ul>
     <li><a href="http://huangxuan.me/2016/06/05/pwa-in-my-pov/">Progressive Web App 之我见 · 2016</a></li>
@@ -36,7 +37,7 @@ header-img: "img/about-bg.jpg"
     <li><a href="http://huangxuan.me/2015/07/09/js-module-7day/">JavaScript 模块化七日谈 · 2015</a></li>
     </ul> -->
 
-    <h5>Resumes</h5>
+    <h5>简历</h5>
 
     <ul>
         <li><a href="/attach/2016_WU_CV_CH.pdf" target="_blank">2016_WU_CV_CH</a></li>
@@ -52,7 +53,7 @@ header-img: "img/about-bg.jpg"
 
     <p>Hi there, my name is <strong>WU Siyuan (吴思元)</strong>，you can call me <strong>Theo</strong>. I'm an amateur software engineer &amp; designer who loves building softwares. Here is my github repo 👉 <a href="http://github.com/theowu" target="_blank">Github</a>. I studied electronic and software engineering at <a href="http://iutnb.univ-lorraine.fr/" target="_blank">Institut of Technology of Lorrain University</a> in Nancy, France in 2012, and graduatted from <a href="http://www.univ-rouen.fr/" target="_blank">Rouen University</a> with a "Teaching French as a foreign language" Master degree in 2015.</p>
 
-    <p>More than a blogger, I also learn and practice french everyday</a>.</p>
+    <p>More than a blogger, I also learn and practice french everyday.</p>
 
     <figure style="text-align:center;">
         <img src="https://1rtiow.dm2301.livefilestore.com/y3mXgdlyjQs98Wvjxqtk_EkNGnxnkj8yVqlQKmhBlpvkGqF-ebZGWJ_fsXBLqrGB4N5-DjPIld5HGdQbyuRK77pAAeiLR2T2vtko40CbIqcw8nxVbh8eFtGU_-Hmv3pXGPZKcTSKx8vVxFcshMxkzKK11YM9iJn3JCOqg1u6zQDz6Y?width=600&height=600&cropmode=none" alt="theo-self-presentation" width="200" height="200" style="display:inline; border-radius:10px;">
@@ -67,11 +68,28 @@ header-img: "img/about-bg.jpg"
     </ul>
 </div>
 
+<!-- French Version -->
+<div class="fr post-container">
+    <blockquote><p>iOS &amp; Frontend développeur &amp; UX Designer junior mais passionné.</p></blockquote>
+
+    <p>Salut, moi c'est <strong>WU Siyuan (吴思元)</strong>, tu peux m'appeler <strong>Théo</strong>. Je suis un ingénieur &amp; designer amateur et j'adores programmer des applications/logiciels. Tu trouveras ici mon github repo 👉 <a href="http://github.com/theowu" target="_blank">Github</a>. J'ai fait un DUT GEII (Génie Electrique et Informatique Industrielle) à <a href="http://iutnb.univ-lorraine.fr/" target="_blank">IUT Nancy-Brabois</a>, université de Lorraine, en 2012. Et j'ai terminé mon cursus universitaire avec un Master Diffusion du français à <a href="http://www.univ-rouen.fr/" target="_blank">Université de Rouen</a> en 2015.</p>
+
+    <p>Cela fait 7 ans que je vis et étudies en France, et je comptes continuer mon aventure dans ce pays des merveilles.</p>
+
+    <h5>Curriculum Vitae</h5>
+
+    <ul>
+        <li><a href="/attach/2016_WU_CV_FR.pdf" target="_blank">2016_WU_CV_FR</a></li>
+        <li><a href="/attach/2016_WU_CV_CH.pdf" target="_blank">2016_WU_CV_CH</a></li>
+    </ul>
+</div>
+
 <!-- Handle Language Change -->
 <script type="text/javascript">
     // get nodes
     var $zh = document.querySelector(".zh");
     var $en = document.querySelector(".en");
+    var $fr = document.querySelector(".fr");
     var $select = document.querySelector("select");
 
     // bind hashchange event
@@ -80,16 +98,20 @@ header-img: "img/about-bg.jpg"
     // handle render
     function _render(){
         var _hash = window.location.hash;
-        // en
-        if(_hash == "#en"){
+        if(_hash == "#zh"){
+            $select.selectedIndex = 0;
+            $zh.style.display = "block";
+            $en.style.display = "none";
+            $fr.style.display = "none";
+        }else if (_hash == "#en"){
             $select.selectedIndex = 1;
             $en.style.display = "block";
             $zh.style.display = "none";
-        // zh by default
-        }else{
-            // not trigger onChange, otherwise cause a loop call.
-            $select.selectedIndex = 0;
-            $zh.style.display = "block";
+            $fr.style.display = "none";
+        } else {
+            $select.selectedIndex = 2;
+            $fr.style.display = "block";
+            $zh.style.display = "none";
             $en.style.display = "none";
         }
     }
@@ -98,16 +120,16 @@ header-img: "img/about-bg.jpg"
     function onLanChange(index){
         if(index == 0){
             window.location.hash = "#zh"
-        }else{
+        }else if(index == 1) {
             window.location.hash = "#en"
+        }else{
+            window.location.hash = "#fr"
         }
     }
 
     // init
     _render();
 </script>
-
-
 
 {% if site.duoshuo_username %}
 <!-- data-thread-id 修改成自己的 -->
@@ -169,3 +191,29 @@ header-img: "img/about-bg.jpg"
 </script>
 <!-- disqus 公共JS代码 end -->
 {% endif %}
+
+<!-- another version of select onChange -->
+<!-- Handle Language Change -->
+<!-- <script type="text/javascript">
+    // get nodes
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    var $fr = document.querySelector(".fr");
+
+    // handle select change
+    function onLanChange(index){
+        if(index == 0){
+            $zh.style.display = "block";
+            $en.style.display = "none";
+            $fr.style.display = "none";
+        }else if(index == 1) {
+            $en.style.display = "block";
+            $zh.style.display = "none";
+            $fr.style.display = "none";
+        }else{
+            $fr.style.display = "block";
+            $zh.style.display = "none";
+            $en.style.display = "none";
+        }
+    }
+</script> -->
