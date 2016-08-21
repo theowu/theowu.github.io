@@ -196,5 +196,5 @@ Mac系统的 AutoMator 可以实现这个功能。打开 Automator 这个程序�
 ###### 参考资料：
 
 [如何优雅地使用Sublime Text](http://www.jeffjade.com/2015/12/15/2015-04-17-toss-sublime-text/#eight)	
-[开发者最常用的 8 款 Sublime text 3 插件](https://linux.cn/article-7056-1.html)
+<br>[开发者最常用的 8 款 Sublime text 3 插件](https://linux.cn/article-7056-1.html)
 
