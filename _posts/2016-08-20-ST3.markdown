@@ -23,11 +23,11 @@ Theo 电脑上的 Sublime Text 3 界面👇：
 
 就像虾兵蟹将弄到定海神针也没法把它变成金箍棒一样，小白们下载了 **Sublime Text 3** 其实也会稍微蒙B一下。因为没经过设置和定制的 **Sublime Text 3** 是没有那些传说中的 duang! duang! duang! 的特效的。今天 Theo 就来梳理一下拿到神器后的一些基础配置。
 
-##安装 Sublime Text 3
+## 安装 Sublime Text 3
 
 这个就不赘述了，直接到到 [Sublime Text 官网](https://www.sublimetext.com) 下载安装。
 
-##安装插件
+## 安装插件
 
 **Sublime Text 3** 可以很方便的用一个叫 [Package Control](https://packagecontrol.io/) 的包管理器去寻找，安装和更新插件。
 
@@ -39,7 +39,7 @@ Theo 电脑上的 Sublime Text 3 界面👇：
 
 稍等一下等安装完成后重启 **Sublime Text 3** 在 `Perferences -> Package Settings` 中看到 `Package Control` 这一项，则安装成功。接下来按下 `cmd + shift + p` 或者 `Tools -> Command Palette` 调出命令面板，然后输入install 找到 `Install Package` 选项并回车，然后输入插件名称找到并回车就可以安装对应的插件了。
 
-###基础插件
+### 基础插件
 
 以下是我整理出来的一些基础插件：
 
@@ -111,7 +111,7 @@ Theo 电脑上的 Sublime Text 3 界面👇：
 
 > 下面我们来看一看一些满足更特殊要求的插件。
 
-###支持 Markdown
+### 支持 Markdown
 
 <span style="background-color:#f7ac00; color:white; border-radius:5px; padding:10px;"><b>1. Markdown 语法高亮</b></span><br>
 
@@ -138,7 +138,7 @@ Theo 电脑上的 Sublime Text 3 界面👇：
 
 安装完这个插件后，在书写 markdown 文件时，用快捷键 `cmd + alt + o` 即可在浏览器本地预览文件显示效果，`cmd + alt + x` 即可导出 HTML 文件。
 
-###支持 Swift
+### 支持 Swift
 
 <span style="background-color:#f7ac00; color:white; border-radius:5px; padding:10px;"><b>1. Swift语法高亮</b></span><br>
 
@@ -161,7 +161,7 @@ Theo 电脑上的 Sublime Text 3 界面👇：
 
 `cmd + s` 保存，输入文件名：`swift.sublime-build`，OK搞定。
 
-##其他插件
+## 其他插件
 
 还有很多实用强大的插件，按需安装即可，这里再介绍一款：
 
@@ -171,11 +171,11 @@ Theo 电脑上的 Sublime Text 3 界面👇：
 
 > 另外，如果你不喜欢网上流传的各种主题，想自己制作一个自己着色的主题，那么可以访问👉[这个网站](http://tmtheme-editor.herokuapp.com/#!/editor/theme/Monokai)。
 
-##删除插件
+## 删除插件
 
 有时候小手一抖误装了插件或者安装了之后效果不满意怎么办呢。很简单，就像安装一样还是 `cmd + shift + p` 或者 `Tools -> Command Palette` 调出命令面板，然后输入remove 找到 `Remove Package` 选项并回车，然后输入插件名称找到并回车，等待左下角提示成功卸载后重启一下 **Sublime Text 3** 即可。
 
-##把 Sublime Text 3 添加到Mac右键菜单
+## 把 Sublime Text 3 添加到Mac右键菜单
 
 现在 **Sublime Text 3** 已经基本上被配置的很好用了，但是有时候一些古怪的文件想用神器打开怎么办呢? 
 
@@ -193,7 +193,7 @@ Mac系统的 AutoMator 可以实现这个功能。打开 Automator 这个程序�
 
 > 好啦，尽情的享受神级编辑器给你带来的行云流水般的编码和写作体验吧!
 
-######参考资料：
+###### 参考资料：
 
 [如何优雅地使用Sublime Text](http://www.jeffjade.com/2015/12/15/2015-04-17-toss-sublime-text/#eight)	
 [开发者最常用的 8 款 Sublime text 3 插件](https://linux.cn/article-7056-1.html)
