@@ -243,7 +243,7 @@ tags:
 
 	touch Readme.txt
 
-这不是一个 **Git** 特有的命令，这是另一个标准导航指令。`touch` 的其实是 "create" 即创建的意思，后面跟的是你要创建的东西的名字。如果运行完该指令后你用文件浏览器或者 Finder 浏览到 MyProject 目录下你会发现里面多了一个空的 Readme.txt 文件。如果你调皮又贪玩，你也可以创建 Readme.doc 或者 Kiwi.gif 等等。
+这不是一个 **Git** 特有的命令，这是另一个标准导航指令。`touch` 其实是 "create" 即创建的意思，后面跟的是你要创建的东西的名字。如果运行完该指令后你用文件浏览器或者 Finder 浏览到 MyProject 目录下你会发现里面多了一个空的 Readme.txt 文件。如果你调皮又贪玩，你也可以创建 Readme.doc 或者 Kiwi.gif 等等。
 
 你能清晰地看见新增的 Readme.txt 文件， **Git** 可不一定。让我们测试一下。下一行输入：
 

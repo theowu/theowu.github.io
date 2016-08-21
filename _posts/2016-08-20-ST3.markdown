@@ -1,0 +1,200 @@
+---
+layout:     post
+title:      "如何优雅地使用 Sublime Text 3"
+subtitle:   "遗失的 Sublime Text 3 配置秘籍"
+date:       2016-08-20 20:50:00
+author:     "Theo"
+header-img: "img/post-bg/2016-08-20-ST3.jpg"
+catalog: true
+tags:
+    - 前端
+    - Sublime Text 3
+---
+
+> 工欲善其事必先利其器，普遍带有些许强迫症和完美主义色彩的程序猿们尤其信封这句古训。武林至尊，宝刀屠龙，号令天下，莫敢不从，倚天不出，谁与争锋。要想成为高手，一件趁手的兵器是必不可少的。而 Sublime Text 恰恰就是你苦苦找寻的那件神兵利器，用 **Sublime Text 3** 敲代码，大概就是洛神赋里描述的这种体验：
+
+> 休迅飞凫，飘忽若神。 凌波微步，罗袜生尘。
+
+**Sublime Text 3** 是一款业内**人尽皆知**，**设计简洁**，**界面美观**，**功能强大**，**运行飞快**的**神级代码编辑器**，不仅如此 **Sublime Text 3** 还支持 Mac、Windows 和 Linux 三大主流操作系统。**代码高亮**，**语法提示**，**自动完成**，加上**华丽的界面**，**海量的扩展**。。。用她来写代码，绝对是一种**享受**。相比 Vim 的老气与难于上手，Eclipse，VS 等的庞大和臃肿，**Sublime Text 3** 绝对是**优雅**和**神器**的化身。即便是体积轻巧，启动迅速的 Editplus，Notepad++,甚至 Atom，在这款**性感无比**的编辑器面前也会略显失色。不论是写文章做笔记，无论是 markdown，html 还是 Java，甚至是 Swift，等等等等。。。她都能**优雅**地胜任。Sublime Text 3 绝对是 Coding 和 Writing 的 **最佳选择，没有之一**。
+
+Theo 电脑上的 Sublime Text 3 界面👇：
+
+![](https://zhv9fw.dm2301.livefilestore.com/y3mmiPbal2E4TH9-ctdae985KLYmTgPuLh5Ns5ArXNV3lLUhPcTrPp7WkLahiRYSJvAKMxvdUz-uAh7AAsYgsTd8R9U1v_qMZN-PgqsuwzEdbvnzrfQEk80rwnH3H_vBGGEu7IlhFzalv8mGVruHDJsG_gjXnam2yyi-Rv0U5NUTq8?width=1024&height=626&cropmode=none)
+
+就像虾兵蟹将弄到定海神针也没法把它变成金箍棒一样，小白们下载了 **Sublime Text 3** 其实也会稍微蒙B一下。因为没经过设置和定制的 **Sublime Text 3** 是没有那些传说中的 duang! duang! duang! 的特效的。今天 Theo 就来梳理一下拿到神器后的一些基础配置。
+
+##安装 Sublime Text 3
+
+这个就不赘述了，直接到到 [Sublime Text 官网](https://www.sublimetext.com) 下载安装。
+
+##安装插件
+
+**Sublime Text 3** 可以很方便的用一个叫 [Package Control](https://packagecontrol.io/) 的包管理器去寻找，安装和更新插件。
+
+**Package Control** 的最简单的安装方法是调出 **Sublime Text 3** 的 console：菜单栏点击 `View` 然后在弹出的菜单里选 `Show Console`。 Console 打开后，把下面这段代码粘贴进去并回车，注意这是 **Sublime Text 3** 的代码，**Sublime Text 2** 不适用：
+
+<code>
+	import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+</code>
+
+稍等一下等安装完成后重启 **Sublime Text 3** 在 `Perferences -> Package Settings` 中看到 `Package Control` 这一项，则安装成功。接下来按下 `cmd + shift + p` 或者 `Tools -> Command Palette` 调出命令面板，然后输入install 找到 `Install Package` 选项并回车，然后输入插件名称找到并回车就可以安装对应的插件了。
+
+###基础插件
+
+以下是我整理出来的一些基础插件：
+
+* **Emmet**
+
+前身是大名鼎鼎的 Zen Coding，这是一个**前端开发不可缺少的插件**，它让编写 HTML 和 CSS 代码变得简单，节省大量时间。Emmet 可使开发者用缩写形式书写代码，再用“扩展”功能自动将代码扩展至完整样式。
+例如创建一个新文件，`View -> Syntax`，语法选择 HTML后输入一个 `!` 再敲一下 tab 键，会自动帮你写出一串最基本的 HTML 结构体：
+
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+	</head>
+	<body>
+		
+	</body>
+	</html>
+
+然后你在body内直接输入 `ul*3>li*2>img` 然后敲 tab 键就会产生如下效果：
+
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+	</head>
+	<body>
+		<ul>
+			<li><img src="" alt=""></li>
+			<li><img src="" alt=""></li>
+		</ul>
+		<ul>
+			<li><img src="" alt=""></li>
+			<li><img src="" alt=""></li>
+		</ul>
+		<ul>
+			<li><img src="" alt=""></li>
+			<li><img src="" alt=""></li>
+		</ul>
+	</body>
+	</html>
+
+这很好理解，它的意思其实就是我要创建三个 ul 每个 ul 里包含两个 li 每个 li 里再内嵌一个img元素。类似的简写有很多，还有很多更高级方便的表达式，感兴趣你可以去看 [Emmet官网的作弊小抄](http://docs.emmet.io/cheat-sheet/)。
+
+* **BracketHighlighter**
+
+用于匹配括号，引号和html标签。对于很长的代码很有用。安装好之后，不需要设置插件会自动生效。
+
+* **ColorPicker**
+
+前端开发或者设计师有时候看见好看的颜色想得到对应的编码，你当然可以打开 Photoshop 或 GIMP。但是在 Sublime Text 中，你可以使用内置的颜色选择器。这个插件安装完成后，按下快捷键 `cmd + shift + c` 就可以调出颜色选择器(Windows 上是 `ctrl + shift + c`)。
+
+* **SideBarEnhancements**
+
+这是一款很实用的右键菜单增强插件，在安装该插件前，Sublime Text 左侧 Folders 栏中文件上点击右键，只有少的可怜的简单功能，这个插件会提供好多右键增强功能。如果你的左边栏好像没东西，你可以用 `Project -> Add Folder to Project` 把你的项目文件全部加进去，然后右键点击其中一个文件，就可以看到强大的右键扩展功能了。
+
+* **SyncedSidebarBg**
+
+有时候换了主题，编码界面颜色变了，可是左边栏的颜色没变，显得很丑很不和谐，这时候这款小插件就派上用场了，它的作用就是让左边栏和右边编码界面的颜色保持一致。
+
+* **ClickableURLs**
+
+校对 HTML 文件有时候会遇到一些想访问的链接，复制粘贴太麻烦，有了这款插件，你就可以直接访问这些链接。
+
+* **ColorSublime**
+
+这是一个主题网站，可以预览，回车直接安装喜欢的主题。
+
+> 下面我们来看一看一些满足更特殊要求的插件。
+
+###支持 Markdown
+
+<span style="background-color:#f7ac00; color:white; border-radius:5px; padding:10px;"><b>1. Markdown 语法高亮</b></span><br>
+
+**Sublime Text 3** 原生不支持 Markdown 语法高亮和本地预览，Theo 寻找了比对了一些插件发现这款插件的语法高亮最漂亮:
+
+* **Monokai Extended**
+
+安装完插件后重启 **Sublime Text 3**，确保你选中了 **Monokai Extended** 主题👇：
+
+<figure style="text-align:center;"><img src="https://zxv9fw.dm2301.livefilestore.com/y3m1sQWhMk5OAsKe9AFyw_PQ6B1wxYaaFKtL1toG59mxu1GPGFAGOPQa4-0zB1SSO08Zn-Uijk4QRhtf18s4IuDjfmI7u6MmbZZYsoC9SpT45VnSh5dmAAxpi6IX0msAmbnx0DJfrKc_Sx6Wv0-LarYE324KzM6AZg_xDXsmRhdNtw?width=1024&height=415&cropmode=none" alt="monokai-extended-select" style="align:center; border-radius:10px;"></figure>
+
+高亮效果如下👇：
+![](https://1rv9fw.dm2301.livefilestore.com/y3m2iJEg6whhJbDcUdchTKABcQ6jonLD8j6q-3y6FXmvadELYESPOPd_UHOgkZQXk3xQO0EPElf6Go0QdtRvxYaRnO4r-ufAQLi2GudOZ7A8K0qZmTHleK3ujmS58HhZohiAqn6jBcv-_dx6a3B06VBwbpe5t2aOiNoFf8Y3cIWdUM?width=1024&height=639&cropmode=none)
+
+* **Monokai Extended**
+
+该插件的作者还写了另一款叫做 **Markdown Extended** 的插件，它能够给 markdown 文件里引用的代码块着色👇：
+
+<figure style="text-align:center;"><img src="https://0bv9fw.dm2301.livefilestore.com/y3mUa3zZkmFisJ5J8sUJBO3HCuOJjaGvhoOiO1bieLWi16HwZrsN6OtLBDmlFj5llTZcDdPt1MAqkov0-MNyxtgbKGTc6wxCrpwLEQ9a3-Tw3RVE_oxqFhp6AKfLGn2m5JuBmpHLMTqg8uL8ttr37AD-eXr2kdgrYozEzuwtKC-Vps?width=1024&height=380&cropmode=none" style="border-radius:10px;"></figure>
+
+<span style="background-color:#f7ac00; color:white; border-radius:5px; padding:10px;"><b>2. Markdown 本地预览</b></span><br>
+
+* **OmniMarkupPreviewer**
+
+安装完这个插件后，在书写 markdown 文件时，用快捷键 `cmd + alt + o` 即可在浏览器本地预览文件显示效果，`cmd + alt + x` 即可导出 HTML 文件。
+
+###支持 Swift
+
+<span style="background-color:#f7ac00; color:white; border-radius:5px; padding:10px;"><b>1. Swift语法高亮</b></span><br>
+
+* **Swift for F*ing sublime**
+
+试过很多，只有这个插件提供的语法高亮最漂亮，效果如下👇：
+
+![](https://2htiow.dm2301.livefilestore.com/y3m1rxoGXHynJutqyrRnQTYhzwr9AiJ53kWpzmFoo9tjl0SDeWq5d64P8feSSxtH-1cd1xjkrp8Bxii3arbfQ_3Er6UlYVyJlrqmkaEc14okrPG3n6xVXooumBf2qz5vOr3lxfMNMLbFY5FdxZ4vQdiEQtOk8e9jLaH4mj1mcV8Rnk?width=1024&height=679&cropmode=none)
+
+<span style="background-color:#f7ac00; color:white; border-radius:5px; padding:10px;"><b>2. Swift编译</b></span><br>
+
+因为 **Sublime Text 3** 中没有为 Swift 配置编译工具，所以我们手动配置一下。打开 **Sublime Text 3**，选择 `Tools -> Build System -> New Build System`，在新打开的文件中输入一下配置：
+	
+	{
+    	"cmd": ["swift", "${file}"],
+    	"file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+    	"path": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/",
+    	"selector": "source.swift"
+	}
+
+`cmd + s` 保存，输入文件名：`swift.sublime-build`，OK搞定。
+
+##其他插件
+
+还有很多实用强大的插件，按需安装即可，这里再介绍一款：
+
+* **SublimeCodeIntel**
+
+这是一款代码提示和补全插件，支持 JavaScript、Mason、XBL、XUL、RHTML、SCSS、Python、HTML、Ruby、Python3、XML、Sass、XSLT、Django、HTML5、Perl、CSS、Twig、Less、Smarty、Node.js、Tcl、TemplateToolkit 和 PHP 等大部分语言，比 **Sublime Text 3** 自带的代码提示功能友更好，另外还支持提示用户自定义代码，跳转到变量，函数定义等功能。但是作为初学者建议还是尽量不要太依靠代码补全，这就是为什么 Theo 没在一开始就极力推荐这款插件的原因。
+
+> 另外，如果你不喜欢网上流传的各种主题，想自己制作一个自己着色的主题，那么可以访问👉[这个网站](http://tmtheme-editor.herokuapp.com/#!/editor/theme/Monokai)。
+
+##删除插件
+
+有时候小手一抖误装了插件或者安装了之后效果不满意怎么办呢。很简单，就像安装一样还是 `cmd + shift + p` 或者 `Tools -> Command Palette` 调出命令面板，然后输入remove 找到 `Remove Package` 选项并回车，然后输入插件名称找到并回车，等待左下角提示成功卸载后重启一下 **Sublime Text 3** 即可。
+
+##把 Sublime Text 3 添加到Mac右键菜单
+
+现在 **Sublime Text 3** 已经基本上被配置的很好用了，但是有时候一些古怪的文件想用神器打开怎么办呢? 
+
+Mac系统的 AutoMator 可以实现这个功能。打开 Automator 这个程序，找不到的话用 Spotlight 搜索一下，打开后在弹出的菜单中选择 `服务`。在左上角的搜索框搜索 `Finder` 然后在结果里面选择 `打开Finder项目`
+，然后把它拖到右边的工作框里。
+
+拖完之后，从上到下依次设定为 服务收到选定的 `文件或文件夹` 位于 `Finder`，打开方式为 `Sublime Text 3`
+然后 `cmd + S` 保存项目, 起个名字名字，比如 Open in ST3。
+
+**可能遇到的坑**：Open in ST3 没有直接在右键菜单出现，而是出现在服务二级菜单。
+
+其实这是因为服务菜单里面内容太多了，Mac系统自动把菜单收缩到了二级菜单。可以到 `系统偏好设置 -> 键盘 -> 服务` 中勾掉不常用的选项。
+
+如果操作失误想删除掉创建的服务，直接去 `~/Library/Services` 删除对应的文件就行啦。
+
+> 好啦，尽情的享受神级编辑器给你带来的行云流水般的编码和写作体验吧!
+
+######参考资料：
+
+[如何优雅地使用Sublime Text](http://www.jeffjade.com/2015/12/15/2015-04-17-toss-sublime-text/#eight)	
+[开发者最常用的 8 款 Sublime text 3 插件](https://linux.cn/article-7056-1.html)
+
