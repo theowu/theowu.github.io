@@ -83,9 +83,6 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "Huxpro",
-        href: "http://huangxuan.me/"
-    },{
         title: "Su",
         href: "http://su.gallery/"
     },{
@@ -118,5 +115,8 @@ friends: [
     },{
         title: "前端神盾局",
         href: "http://wepiaofei.github.io/blog/"
+    },{
+        title: "Huxpro",
+        href: "http://huangxuan.me/"
     }
 ]
