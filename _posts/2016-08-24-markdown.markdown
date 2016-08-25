@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "桃花影落飞神剑,碧海潮生按玉箫"
+title:      "桃花影落飞神剑，碧海潮生按玉箫"
 subtitle:   "只爱优雅 - Markdown30秒极速上手指南"
 date:       2016-08-24 21:42:00
 author:     "Theo"
