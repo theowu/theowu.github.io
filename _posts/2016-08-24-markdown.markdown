@@ -1,0 +1,208 @@
+---
+layout:     post
+title:      "桃花影落飞神剑，碧海潮生按玉箫"
+subtitle:   "只爱优雅 - Markdown30秒极速上手指南"
+date:       2016-08-24 21:42:00
+author:     "Theo"
+header-img: "img/post-bg/markdown.jpg"
+catalog: true
+tags:
+    - Markdown
+---
+
+玩 GitHub 或者 Stackoverflow 的童鞋应该都熟悉 **Markdown**。Stackoverflow 的代码块以及 Github 上的 README.md 文件格式都是通过 **Markdown** 表现的。
+
+**Markdown 是一种语法全由一些精挑细选的符号所组成网络书写语言**，有点像你记笔记时候发明的一套简写标记规则，其目标是实现「易读易写」。她兼容HTML，因此当你用 Markdown 写作时不知道怎么用特定语法实现你想要的效果时，可以插入 HTML 代码块小小地作弊一下😂。一个Markdown文件的后缀名可以是 `.markdown`，也可以是 `.md`，不过 Markdown 文件实际上是一个**纯文本文件**。
+
+Markdown 的**纯文本，兼容性强，格式转换方便，可读性好**等特性让她成为一门让博主们可以**专注写作**的优雅语言。
+
+> 如果你是小白，你可以用30秒的时间把 Markdown 的基础啃一遍。如果你是老司机，你也可以用30秒的时间潇洒走一回。
+<br> So, let's get started!
+
+### 标题
+
+标题的创建非常直观，直接在文本前面加上 `#` 即可，总共支持六级标题，几级标题就插入几个 `#`，标题字号是递减的，需要注意的是 **`#` 和「标题」之间要保留一个空格**，不保留的话，有可能不知道什么情况下就会出问题：
+
+	# 一级标题
+	## 二级标题
+	### 三级标题
+	#### 四级标题
+	##### 五级标题
+	###### 六级标题
+
+还有就是写完标题最好跳一行再写正文：
+
+	# 标题
+
+	正文在这写。。。
+
+### 引用
+
+在被引用的文字前面加上 `>` 即可，同样的 **`>` 和「被引用文字」之间要保留一个空格**，不要吝惜跳行，引用完后最好跳一行：
+
+	> 桃花影落飞神剑，碧海潮生按玉箫
+
+<span style="background-color:#00d383; color:white; border-radius:8px 8px 0 0; padding:5px;">效果：</span>
+
+> 桃花影落飞神剑，碧海潮生按玉箫
+
+### 粗体和斜体
+
+两个 `*` 包含一段文字就是粗体，用一个 `*` 包含一段文字就是斜体的语法，如果用三个 `*` 围起来，被围的文字就会既加粗又加斜：
+
+	**这段文字会被加粗**
+	*这段文字会变斜体*
+	***这段文字既粗又斜***
+
+<span style="background-color:#00d383; color:white; border-radius:8px 8px 0 0; padding:5px;">效果：</span>
+
+**这段文字会被加粗**
+*这段文字会变斜体*
+***这段文字既粗又斜***
+
+有童鞋说怎么没跳行，要跳行的话你得空一行，像这样写：
+
+	**这段文字会被加粗**
+
+	*这段文字会变斜体*
+
+不然的话也可以用 HTML 的 `<br>` 标签，像这样：
+
+	**这段文字会被加粗**<br>*这段文字会变斜体*
+
+	**这段文字会被加粗**<br>
+	*这段文字会变斜体*
+
+	**这段文字会被加粗**
+	<br>*这段文字会变斜体*
+
+以上三种写法效果是一样的。还有就是 Markdown 里星号 `*` 和底线 `_` 的效果相同可以互换，以下两句具有完全相同的效果：
+
+	*这段文字会变斜体*
+	_这段文字会变斜体_
+
+### 列表
+
+文字前面加上 `*` 或者 `-` 外加空格就可以了，次级列表就是文字前再加四个空格或者一个 tab 制表符，一共支持三级列表：
+
+	* 第一项
+		* 第1.1项
+			* 第1.2项
+	- 第二项
+		- 第2.1项
+			- 第2.2项
+
+<span style="background-color:#00d383; color:white; border-radius:8px 8px 0 0; padding:5px;">效果：</span>
+
+* 第一项
+	* 第1.1项
+		* 第1.2项
+- 第二项
+	- 第2.1项
+		- 第2.2项
+
+### 分割线
+
+分割线有多种写法，比如以下三种：
+
+	---
+	___
+	***
+
+### 超链接
+
+超链接的文字部分用 `[]` 括起来，随后 `()` 内部填写链接地址：
+
+	[Theo的博客](http://theowu.tk)
+
+<span style="background-color:#00d383; color:white; border-radius:8px 8px 0 0; padding:5px;">效果：</span>
+
+[Theo的博客](http://theowu.tk)
+
+还有一种自动链接，意思是链接的文字和链接本身是一样的字符串，常用于电子邮件：
+
+	<http://theowu.tk>
+
+	<kermitiradennis@hotmail.com>
+
+<span style="background-color:#00d383; color:white; border-radius:8px 8px 0 0; padding:5px;">效果：</span>
+
+<http://theowu.tk>
+
+<kermitiradennis@hotmail.com>
+
+### 图片
+
+图片其实是一种特殊的超链接，不同的是图片不需要显示名字，所以直接以 `![]` 开头，随后 `()` 内部填写图片地址：
+
+	![](https://0hsexw.dm2301.livefilestore.com/y3makNFpIeV0mEeh8XkqT8o84qb1dSqtNv5ZkyVA-bobdc0l_jpTZMKZoprSeow089OXvtjs8161QnSve_QZHGyinCpKl5fqsoK3ntDigBQl5Z0KuGepPXcPXtgj0PkQ-vR5wC109g9jkA8QIrUYZ4Ifdot8tPoJstK8ljcAR_2x2c?width=256&height=256&cropmode=none)
+
+<span style="background-color:#00d383; color:white; border-radius:8px 8px 0 0; padding:5px;">效果：</span>
+
+![](https://0hsexw.dm2301.livefilestore.com/y3makNFpIeV0mEeh8XkqT8o84qb1dSqtNv5ZkyVA-bobdc0l_jpTZMKZoprSeow089OXvtjs8161QnSve_QZHGyinCpKl5fqsoK3ntDigBQl5Z0KuGepPXcPXtgj0PkQ-vR5wC109g9jkA8QIrUYZ4Ifdot8tPoJstK8ljcAR_2x2c?width=256&height=256&cropmode=none)
+
+### 代码块
+
+代码块只要在普通段落前加四个空格或者一个 tab 制表符即可，例如：
+
+		let a = 10
+		let b = 10
+		var c = a + b
+		print(c)
+
+<span style="background-color:#00d383; color:white; border-radius:8px 8px 0 0; padding:5px;">效果：</span>
+
+	let a = 10
+	let b = 10
+	var c = a + b
+	print(c)
+
+还可以这样写用来添加语法高亮：
+
+	```html
+	<h1>这是一个标题</h1>
+	<p>这是一个<span style="color:#18d81c">段落</span></p>
+	<br>
+	```
+
+<span style="background-color:#00d383; color:white; border-radius:8px 8px 0 0; padding:5px;">效果：</span>
+
+```html
+<h1>这是一个标题</h1>
+<p>这是一个<span style="color:#18d81c">段落</span></p>
+<br>
+```
+
+### 表格
+
+表格是用竖线画的，基本上是所见即所得，但是竖线也可以不对齐 (下面的例子里就没对齐)。冒号代表向哪里对齐，虚线两端都设有冒号意即**居中**，左端有冒号意即**向左对齐**，右端有冒号意即**向右对齐**：
+
+	| 姓名  	| 部门      | 奖金  |
+	| ---- | :------: | -----:|
+	| 阿黄  	| 公关部    | $1600 |
+	| 如花 	| 销售部    |   $12 |
+	| 小强 	| 技术部    |    $1 |
+
+
+<span style="background-color:#00d383; color:white; border-radius:8px 8px 0 0; padding:5px;">效果：</span>
+
+| 姓名  	| 部门 	| 奖金  	|
+| ----- |:-----:| -----:|
+| 阿黄  	| 公关部 | $1600 |
+| 如花 	| 销售部	|   $12 |
+| 小强 	| 技术部 |    $1 |
+
+### 转义字符
+
+一些语法保留的关键符号想作为字符串显示在文本里怎么办呢? 例如：\* 桃花影落飞神剑，碧海潮生按玉箫 \*
+在保留符号前面加个反斜杠就可以了，像这样输入：
+
+	\* 桃花影落飞神剑，碧海潮生按玉箫 \*
+
+> 还等什么，赶快打开你心仪的编辑器，开始优雅地写作吧!
+
+###### 著作权声明
+
+博客内的文章如无特殊声明均为 Theo 原创，转载请保留原文链接，谢谢。
+
+更多详细的讲解请参阅 [Markdown 语法说明(简体中文版)](http://wowubuntu.com/markdown/#em)
