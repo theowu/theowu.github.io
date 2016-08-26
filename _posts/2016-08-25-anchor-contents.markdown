@@ -147,4 +147,4 @@ OK，这些构造支持页内跳转目录的黑魔法你都学会了吗，快去
 
 ###### 著作权声明
 
-博客内的文章如无特殊声明均为 Theo 原创，转载请保留原文链接，谢谢。
+<span style="background-color:#f9e9a4; border-radius:5px; padding:5px;">博客内的文章如无特殊声明均为 Theo 原创，转载请保留原文链接，谢谢。<span>

@@ -45,7 +45,10 @@ tags:
 	<h4>经推广的普适方法论：</h4>
 	<blockquote style="color:#ca1e00;">“<span style="font-size:20px;">发现问题，解决问题</span> (需要严谨的思考和实践)。”</blockquote>
 	遇见问题的第一反应应该是这个，而不是 “ 是啊，可是。。。 他要是。。。就。。。我就是。。。嗨。。。没什么。。。就是。。。”，否则就是所说的懒惰和态度问题。这些远远没有看起来那么简单，实际上，没有一件事是像它看起来那样简单的。<br><br>
-	2013年5月8日 Theo 于 <a target="_blank" href="http://baike.baidu.com/item/克莱蒙费朗/1663392">克雷蒙・费朗</a>
+	2013年5月8日 Theo 于 <a target="_blank" href="http://baike.baidu.com/item/克莱蒙费朗/1663392">克雷蒙・费朗</a><br><br>
+	
+	<h6>著作权声明</h6>
+	<span style="background-color:#f9e9a4; border-radius:5px; padding:5px;">博客内的文章如无特殊声明均为 Theo 原创，转载请保留原文链接，谢谢。<span>
 </div>
 
 <!-- French Version -->
