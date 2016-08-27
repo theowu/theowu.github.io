@@ -40,7 +40,15 @@ tags:
 
 <h5><span style="background-color:#f98178; color:white; padding: 10px; border-radius:10px 10px 0 0;">Scrum</span></h5>
 
+**Scrum 是一种 敏捷软件开发 的方法学**，用于迭代式增量软件开发过程。**Scrum** 在英语是橄榄球运动中的**争球**的意思。
 
+虽然 **Scrum** 方法是为管理软件开发项目而被发明的，它同样可以用于运行软件维护团队，或者作为计划管理方法。**Scrum** 之间的合作称为 ***Scrum of Scrums***。
+
+Scrum是一个包括了一系列实践和预定义角色的过程骨架。Scrum中的主要角色包括：
+
+'Scrum Master'是Scrum教练和团队带头人，确保团队合理的运作Scrum，并帮助团队扫除实施中的障碍；
+产品负责人，确定产品的方向和愿景，定义产品发布的内容、优先级及交付时间，为产品投資報酬率负责；
+开发团队，一个跨职能的小团队，人数5-9人，团队拥有交付可用软件需要的各种技能。
 
 <span style="border:2px solid #f98178; padding:5px; border-radius:10px"><b>参考资料：</b></span>
 [Scrum](https://zh.wikipedia.org/wiki/Scrum)

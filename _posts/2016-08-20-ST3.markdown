@@ -126,7 +126,7 @@ Theo 电脑上的 Sublime Text 3 界面👇：
 高亮效果如下👇：
 ![](https://1rv9fw.dm2301.livefilestore.com/y3m2iJEg6whhJbDcUdchTKABcQ6jonLD8j6q-3y6FXmvadELYESPOPd_UHOgkZQXk3xQO0EPElf6Go0QdtRvxYaRnO4r-ufAQLi2GudOZ7A8K0qZmTHleK3ujmS58HhZohiAqn6jBcv-_dx6a3B06VBwbpe5t2aOiNoFf8Y3cIWdUM?width=1024&height=639&cropmode=none)
 
-* **Monokai Extended**
+* **Markdown Extended**
 
 该插件的作者还写了另一款叫做 **Markdown Extended** 的插件，它能够给 markdown 文件里引用的代码块着色👇：
 
