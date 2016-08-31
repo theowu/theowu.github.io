@@ -4,7 +4,11 @@
 
 ![](http://theowu.tk/img/blog-desktop.jpg)
 
-## Features
+##### New Feature (V1.6)
+
+- Add <a target="_blank" href="http://theowu.tk/resume/index_fr">Resume</a> section.
+
+# Historical versions
 
 Theme coloned from [Hux Blog](https://github.com/huxpro/huxpro.github.io/)
 Below are features of historical versions:
